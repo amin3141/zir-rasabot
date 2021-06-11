@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet"
+        href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+</head>
+
+<body>
+    <div class="chat-container"></div>
+
+    <script
+        src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js" />
+    </script>
+    <script type="text/javascript">
+        var chatroom = new window.Chatroom({
+            host: "http://35.80.14.146:5005",
+            title: "Kendra, powered by Rasa and ZIR AI",
+            container: document.querySelector(".chat-container"),
+            welcomeMessage: "Hello, my name is Kendra, and I'll be happy to assist with your questions about Burj Al Arab Jumeirah. How may I help you"
+        });
+        chatroom.openChat();
+    </script>
+</body>

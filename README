@@ -1,0 +1,8 @@
+
+rasa run actions
+
+rasa run --credentials ./credentials.yml  --enable-api --auth-token XYZ123 --model ./models --endpoints ./endpoints.yml --cors "*"
+
+python3 server.py
+
+Open localhost:8080 in browser.

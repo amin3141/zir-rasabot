@@ -1,0 +1,38 @@
+version: "2.0"
+
+stories:
+
+- story: faq question
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: reservations
+   - action: utter_reservation
+
+- story: faq jum liv
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: jumeirah_living
+   - action: utter_jum_liv
+     
+- story: faq jum one
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: jumeirah_one
+   - action: utter_jum_one
+     
+- story: faq jum
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: jumeirah
+   - action: utter_jum
+     
+- story: faq lost
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: lost_and_found
+   - action: utter_lost_found

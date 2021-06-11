@@ -1,0 +1,100 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: ask_location
+  examples: |
+    - Where is the hotel? 
+    - The hotel is where? 
+    - In which city is the hotel? 
+
+- intent: jumeirah_living
+  examples: |
+    - What is Jumeirah Living?
+    - Is Jumeirah Living a package?
+    - What can yo tell of Jumeirah Living?
+    - Jumeirah Living?
+    - Jumeirah?
+
+- intent: jumeirah_one
+  examples: |
+    - What is Jumeirah One?
+    - Is Jumeirah One a package?
+    - What can yo tell of Jumeirah One?
+    - Jumeirah One?
+    - Jumeirah?
+
+- intent: lost_and_found
+  examples: |
+    - What is your policy on list and found items?
+    - I lost something, can it be returned?
+    - Luggage lost
+    - Lost my phone.
+    - Return a lost items?
+
+- intent: jumeirah
+  examples: |
+    - What is Jumeirah?
+    - Is Jumeirah a hotel or a brand?
+
+- intent: reservations
+  examples: |
+    - How many rooms do you have?
+    - i want to reserve rooms
+    - Rooms available
+    - Book a room
+    - Need a place to stay for the night
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
