@@ -135,7 +135,8 @@ Use the following information to customize the bot and the source of data.
 Data for the bot is sourced from [OpinRank](https://github.com/kavgan/OpinRank/)
 and reviews for Hotel Jumeirah are specifically used for this bot. Reviews are
 parsed from https://github.com/amin3141/zir-souffle. Use `hotels.py` to generate
-the output `json` and the `reviews.db`.
+the output `json` and the `reviews.db`. Copy the generated `reviews.db` file 
+to this repository.
 
 Create a corpus on [Zir AI](http://zir-ai.com) and upload all the `JSON files.
 Create an API key for access and note down the following information
