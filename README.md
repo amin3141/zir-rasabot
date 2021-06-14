@@ -52,13 +52,13 @@ The end results sums up to be this:
 ## Setup & Play
 
 You'll need to have Rasa installed and this repository. You might want to create
-a [virtual environment](#https://docs.python.org/3/library/venv.html) to isolate
+a [virtual environment](https://docs.python.org/3/library/venv.html) to isolate
 the dependencies rasa requires.
 
 ### Set-up Rasa
 
 Follow the
-[rasa installation instrcutions](#https://rasa.com/docs/rasa/installation) or
+[rasa installation instrcutions](https://rasa.com/docs/rasa/installation) or
 copy paste the following commands in terminal
 
 ```bash
