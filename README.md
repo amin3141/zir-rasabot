@@ -43,8 +43,7 @@ did not expect, for such a scenario Rasa provides a
 
 Using the mechanism the bot can ask a fallback action and search through the
 reviews uploaded in [Zir-AI](https://zir-ai.com) with the help of
-[custom actions](https://rasa.com/docs/rasa/custom-actions). If the reviews have
-the relevant information is shown as a result otherwise if the confidence of the
+[custom actions](https://rasa.com/docs/rasa/custom-actions). The relevant information is shown if available otherwise if the confidence of the
 question to reviews available is low, we fallback to a generic statement.
 
 The results sum up to be this:
