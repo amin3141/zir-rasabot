@@ -14,8 +14,8 @@ mechanism, which gets relevant information from ZIR Semantic Search.
 
 # Table of contents
 
-* [Rasa Bot & Zir](#rasa-bot---zir)
-* [Setup & Play](#setup---play)
+* [Rasa Bot & Zir](#rasa-bot--zir)
+* [Setup & Play](#setup--play)
   + [Set-up Rasa](#set-up-rasa)
   + [Set-up repo](#set-up-repo)
   + [Running the demo](#running-the-demo)
