@@ -14,22 +14,22 @@ mechanism, which gets relevant information from ZIR Semantic Search.
 
 # Table of contents
 
-* [Rasa Bot & Zir](#rasa-bot--zir)
-* [Setup & Play](#setup--play)
-  + [Set-up Rasa](#set-up-rasa)
-  + [Set-up repo](#set-up-repo)
-  + [Running the demo](#running-the-demo)
-* [Customizing the bot](#customizing-the-bot)
-  + [Data](#data)
-  + [Rasa Custom Action](#rasa-custom-action)
+- [Rasa Bot & Zir](#rasa-bot--zir)
+- [Setup & Play](#setup--play)
+  - [Set-up Rasa](#set-up-rasa)
+  - [Set-up repo](#set-up-repo)
+  - [Running the demo](#running-the-demo)
+- [Customizing the bot](#customizing-the-bot)
+  - [Data](#data)
+  - [Rasa Custom Action](#rasa-custom-action)
 
 ## Rasa Bot & Zir
 
 [Rasa](https://rasa.com/) is the leading conversational AI platform, for
-personalized conversations at scale. Developers provide the questsions they
-expect the end customer to ask and Rasa bot, using AI, predicts and matches the
+personalized conversations at scale. Developers provide the questions they
+expect the end customer to ask and the Rasa bot, using AI, predicts and matches
 what the customer intended to ask. With this information at hand, developers can
-easily match what the bot should respond.
+easily match what the bot should respond to.
 
 This is all well unless when the customer asks a valid question the developer
 did not expect, for such a scenario Rasa provides a
@@ -41,13 +41,13 @@ did not expect, for such a scenario Rasa provides a
 > option to either respond with a default message or attempt to disambiguate the
 > user input.
 
-Using the mechanism the bot can ask a fallback action and search through the reviews
-uploaded in [Zir-AI](https://zir-ai.com) with the help of
+Using the mechanism the bot can ask a fallback action and search through the
+reviews uploaded in [Zir-AI](https://zir-ai.com) with the help of
 [custom actions](https://rasa.com/docs/rasa/custom-actions). If the reviews have
-the relavent information, it is shown as a result otherwise if the confidence of
-the question to reviews available is low, we fallback to a generic statement.
+the relevant information is shown as a result otherwise if the confidence of the
+question to reviews available is low, we fallback to a generic statement.
 
-The end results sums up to be this:
+The results sum up to be this:
 
 ## Setup & Play
 
@@ -59,7 +59,7 @@ the dependencies rasa requires.
 
 Follow the
 [rasa installation instrcutions](https://rasa.com/docs/rasa/installation) or
-copy paste the following commands in terminal
+copy-paste the following commands in terminal
 
 ```bash
 pip3 install -U pip
@@ -83,7 +83,7 @@ Python Path       :         /bin/python3
 
 ### Set-up repo
 
-To install dependecies for this repository to work install python dependencies
+To install dependencies for this repository to work install python dependencies
 from requirements.txt
 
 ```bash
@@ -100,14 +100,14 @@ rasa train
 
 ### Running the demo
 
-While running the model, you are require to run the rasa action server along
+While running the model, you are required to run the rasa action server along
 with the rasa bot. So in one terminal run
 
 ```bash
 rasa run actions
 ```
 
-In another terminal you can either play with the bot in your `shell` or on the
+In another terminal, you can either play with the bot in your `shell` or on the
 browser.
 
 To talk to the bot in shell run
@@ -131,20 +131,20 @@ Use the following information to customize the bot and the source of data.
 ### Data
 
 Data for the bot is sourced from [OpinRank](https://github.com/kavgan/OpinRank/)
-and reviews for Hotel Jumeirah is specifically used for this bot. Reviews are
+and reviews for Hotel Jumeirah are specifically used for this bot. Reviews are
 parsed from https://github.com/amin3141/zir-souffle. Use `hotels.py` to generate
 the output `json` and the `reviews.db`.
 
-Create a corpus on [Zir AI](http://zir-ai.com) and upload all the `json` files.
-Create an api key for access and note down the following information
+Create a corpus on [Zir AI](http://zir-ai.com) and upload all the `JSON files.
+Create an API key for access and note down the following information
 
-- Api key
+- API key
 - corpus id
-- customer id
+- customer-id
 
 ### Rasa Custom Action
 
-Use the above collected information and replace the information in
+Use the above-collected information and replace the information in
 `actions/actions.py` and you're good to go.
 
 ```python
