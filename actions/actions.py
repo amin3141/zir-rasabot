@@ -1,31 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
 from typing import Any, Text, Dict, List
 import json
 import requests
@@ -37,10 +9,17 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.events import UserUtteranceReverted
 from rasa_sdk.executor import CollectingDispatcher
 
+
 class ActionDefaultFallback(Action):
     """Executes the fallback action and goes back to the previous state
     of the dialogue"""
 
+    customer_id = "1835841754"
+    corpus_id = 1
+    header = {
+        "customer-id": customer_id,
+        "x-api-key": "zqt_WvU_2atFHgqYxxT2sQswwIUgogI8K3QeWs0oqA"
+    }
     con = None
 
     def name(self) -> Text:
@@ -63,22 +42,19 @@ class ActionDefaultFallback(Action):
                     "num_results": number_results,
                     "corpus_key": [
                         {
-                            "customer_id": "1526022105",
-                            "corpus_id": 40
+                            "customer_id": self.customer_id,
+                            "corpus_id": self.corpus_id
                         }
                     ]
                 }
             ]
         }
-        header = {
-            "customer-id": "1526022105",
-            "x-api-key": "zqt_WvU_2atFHgqYxxT2sQswwIUgogI8K3QeWs0oqA"
-        }
+
         payload = json.dumps(data_dict)
         response = requests.post(f"https://h.serving.zir-ai.io:443/v1/query",
                                  data=payload,
                                  verify=True,
-                                 headers=header,
+                                 headers=self.header,
                                  timeout=10)
         parsed = json.loads(response.text)
         first_resp = parsed["responseSet"][0]["response"][0]
@@ -87,21 +63,22 @@ class ActionDefaultFallback(Action):
         print(last_resp["score"])
         print(first_resp["score"])
         if last_resp["score"] < 0.3 or first_resp["score"] < 0.3:
-            textQuery.append("I'm sorry, I can't help you.")
+            textQuery.append(
+                "I'm sorry, I don't have any information about that.")
         else:
             textQuery = print_responses(parsed["responseSet"][0], self.cur)
-            # items = [d['text'] for d in parsed["responseSet"][0]["response"]]
-            textQuery.insert(0, "\n" )
-            textQuery.insert(0, "This is what i found in the reviews:" )
+            textQuery.insert(0, "\n")
+            textQuery.insert(0, "This is what i found in the reviews:")
         textQuery = "\n".join(textQuery)
         dispatcher.utter_message(text=textQuery)
+
         # Revert user message which led to fallback.
         return [UserUtteranceReverted()]
 
 
 def print_responses(response_set, sqlite_cursor):
     """Print responses to the console."""
-    textList = []
+    text_list = []
     for result in response_set["response"]:
         doc = response_set["document"][result["documentIndex"]]
         query = f"""
@@ -110,26 +87,17 @@ def print_responses(response_set, sqlite_cursor):
         """
         for row in sqlite_cursor.execute(query):
             title, date, hotel, fulltext = row
-            textList.append("**" + title + "**")
+            text_list.append("**" + title + "**")
             if is_title(result):
-                textList.append(f"{head(fulltext)}")
+                text_list.append(f"{head(fulltext)}")
             else:
                 t = result["text"]
-                textList.append(f"{highlight(fulltext, t)}")
-            textList.append("*" + f"{hotel_name(hotel)} reviewed on {date}" + "*")
-            textList.append("\n")
+                text_list.append(f"{highlight(fulltext, t)}")
+            text_list.append(
+                "*" + f"{" > \"Jumeirah Hotels & Resorts\" reviewed on {date}" + " *")
+            text_list.append("\n")
             break
-    return textList
-
-def hotel_name(hotel):
-    """Returns a human-readable name for a hotel."""
-    if hotel == "sheraton_fisherman_s_wharf_hotel":
-        return "Sheraton Fisherman's Wharf Hotel"
-    if hotel == "the_westin_st_francis":
-        return "The Westin St. Francis San Francisco on Union Square"
-    if hotel == "best_western_tuscan_inn_fisherman_s_wharf_a_kimpton_hotel":
-        return "Best Western Fishermans Wharf"
-    return hotel
+    return text_list
 
 
 def highlight(fulltext, snippet):

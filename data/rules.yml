@@ -11,8 +11,3 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: zir_action_fallback
-    
-- rule: out of scope
-  steps:
-  - intent: out_of_scope
-  - action: zir_action_fallback
