@@ -14,8 +14,8 @@ class ActionDefaultFallback(Action):
     """Executes the fallback action and goes back to the previous state
     of the dialogue"""
 
-    customer_id = "1835841754"
-    corpus_id = 1
+    customer_id = "1526022105"
+    corpus_id = 40
     header = {
         "customer-id": customer_id,
         "x-api-key": "zqt_WvU_2atFHgqYxxT2sQswwIUgogI8K3QeWs0oqA"
