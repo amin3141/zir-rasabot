@@ -1,3 +1,6 @@
+# This file binds the different aspects of your bot together. 
+# Stories, intents, actions e.t.c are all declared here to be used.
+# To learn more https://rasa.com/docs/rasa/domain/
 version: "2.0"
 
 intents:

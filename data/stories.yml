@@ -1,3 +1,6 @@
+# This file presents stories or the conversations likely to happen 
+# with the user. Stories are also training data for the bot to stich intents
+# with actions & to behave more like a human.
 version: "2.0"
 
 stories:

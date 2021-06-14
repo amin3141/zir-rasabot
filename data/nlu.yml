@@ -1,3 +1,10 @@
+# NLU training data for the bot. 
+# This file stores the expected queries from the user.
+# Whenever a user utters a message, it is always matched to an intent.
+# This match comes with a confidence number that can be used to identify 
+# how much related the intent is to the uttered message.
+# Minumum number of examples are 2 for each intent. 
+# When writing a new intent, update domain.yml as well.
 version: "2.0"
 
 nlu:
