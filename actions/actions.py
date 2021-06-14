@@ -68,7 +68,8 @@ class ActionDefaultFallback(Action):
         else:
             textQuery = print_responses(parsed["responseSet"][0], self.cur)
             textQuery.insert(0, "\n")
-            textQuery.insert(0, "This is what i found in the reviews:")
+            textQuery.insert(
+                0, "Here's what other customers had to say about that:")
         textQuery = "\n".join(textQuery)
         dispatcher.utter_message(text=textQuery)
 

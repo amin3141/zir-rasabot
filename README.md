@@ -60,7 +60,7 @@ the dependencies rasa requires.
 ### Set-up Rasa
 
 Follow the
-[rasa installation instrcutions](https://rasa.com/docs/rasa/installation) or
+[rasa installation instructions](https://rasa.com/docs/rasa/installation) or
 copy-paste the following commands in terminal
 
 ```bash
@@ -135,15 +135,16 @@ Use the following information to customize the bot and the source of data.
 Data for the bot is sourced from [OpinRank](https://github.com/kavgan/OpinRank/)
 and reviews for Hotel Jumeirah are specifically used for this bot. Reviews are
 parsed from https://github.com/amin3141/zir-souffle. Use `hotels.py` to generate
-the output `json` and the `reviews.db`. Copy the generated `reviews.db` file 
-to this repository.
+the output `json` and the `reviews.db`. Copy the generated `reviews.db` file to
+this repository.
 
-Create a corpus on [Zir AI](http://zir-ai.com) and upload all the `JSON files.
-Create an API key for access and note down the following information
+Create a corpus on [Zir AI](https://zir-ai.com/console/corpora) and upload all
+the JSON files. Create an API key for access and note down the following
+information
 
 - API key
 - corpus id
-- customer-id
+- customer id
 
 ### Rasa Custom Action
 
