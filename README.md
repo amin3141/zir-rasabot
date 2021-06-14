@@ -142,7 +142,7 @@ Create an api key for access and note down the following information
 - corpus id
 - customer id
 
-## Rasa Custom Action
+### Rasa Custom Action
 
 Use the above collected information and replace the information in
 `actions/actions.py` and you're good to go.
