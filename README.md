@@ -49,7 +49,7 @@ reviews available is low, we fallback to a generic statement.
 
 The results sum up to be this:
 
-![zir serach](rasa_zir.gif)
+![zir-serach](./web/rasa_zir.gif)
 
 ## Setup & Play
 
