@@ -21,7 +21,7 @@ mechanism, which gets relevant information from ZIR Semantic Search.
   + [Running the demo](#running-the-demo)
 * [Customizing the bot](#customizing-the-bot)
   + [Data](#data)
-* [Rasa Custom Action](#rasa-custom-action)
+  + [Rasa Custom Action](#rasa-custom-action)
 
 ## Rasa Bot & Zir
 
