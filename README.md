@@ -9,21 +9,19 @@
   </a>
 </p>
 
-# Readme
-
 The source code in this repository shows a simple Rasa chatbot fallback
 mechanism, which gets relevant information from ZIR Semantic Search.
 
 # Table of contents
 
-- [Rasa Bot & Zir](#why)
-- [Setup & Play](#setup-play)
-  - [Set-up Rasa](#setup-rasa)
-  - [Set-up repo](#setup-demo)
-  - [Running the demo](#run-demo)
-- [Customizing the bot](#bot-customization)
-  - [Data](#data)
-  - [Rasa Custom Action](#rasa-cust-action)
+* [Rasa Bot & Zir](#rasa-bot---zir)
+* [Setup & Play](#setup---play)
+  + [Set-up Rasa](#set-up-rasa)
+  + [Set-up repo](#set-up-repo)
+  + [Running the demo](#running-the-demo)
+* [Customizing the bot](#customizing-the-bot)
+  + [Data](#data)
+* [Rasa Custom Action](#rasa-custom-action)
 
 ## Rasa Bot & Zir
 
