@@ -1,0 +1,26 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+stories:
+
+- story: A basic story test
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+     Book a room for two please.
+    intent: reservations
+  - action: utter_reservation
+    
+
+- story: Fallback test
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+     Can we play golf?
+    intent: nlu_fallback
+  - action: zir_action_fallback

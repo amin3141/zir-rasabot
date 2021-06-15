@@ -1,0 +1,54 @@
+# This file binds the different aspects of your bot together. 
+# Stories, intents, actions etc. are all declared here to be used.
+# To learn more https://rasa.com/docs/rasa/domain/
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - jumeirah_living
+  - jumeirah_one
+  - lost_and_found
+  - jumeirah
+  - reservations
+  - ask_location
+
+responses:
+  utter_please_rephrase:
+  - text: Sorry I didn't get that. Can you rephrase?
+    
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+    
+  utter_reservation:
+  - text: "Please go to 'Check Rates & Book Now' section of the hotel you have a reservation for. You will find and an area called 'Cancellations and Amendments'. For all other amendments and cancellations, email or call our Reservations Office."
+
+  utter_jum_liv:
+  - text: "Jumeirah Living is our luxury brand of residences and serviced apartments. Whether for short, mid-term or extended stays, Jumeirah Living will offer innovative yet personal lifestyle experiences unique to each guest, resident and owner, with a strong emphasis on effortless living."
+
+  utter_jum_one:
+  - text: "Jumeirah One is Jumeirah’s loyalty programme designed to recognise and reward loyal guests of Jumeirah. Guests can enjoy more of life’s pleasures with privileged access to an exclusive global lifestyle."
+    
+  utter_lost_found:
+  - text: "Should any guests lose personal belongings whilst staying at a Jumeirah Hotel or Resort in Dubai, if recovered, the item will be recorded as 'found' by that particular property. Each property keeps detailed records of all 'found' items and will store these for a maximum of three months. After this period, in line with the directives of the General Department of Criminal Investigation in Dubai, all unclaimed items will be handed over to the nearest Police Station. These 'found' items will then be kept at the police warehouse for a further three months after which they will be auctioned, and any funds raised given to charity.Should hotel guests need to locate any item after the initial three month period expires, they are requested to contact the hotel who will assist in coordinating with the police station where the found items are handed over. The police will then advise the necessary procedures to locate any item."
+      
+  utter_jum:
+  - text: "Jumeirah is a world-class international hotel and hospitality company which currently manages hotels in  Abu Dhabi, Bahrain, Dubai, Frankfurt, Kuwait, London, Maldives, Mallorca and Shanghai. Please view our Portfolio for more information."
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - zir_action_fallback

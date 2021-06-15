@@ -1,0 +1,16 @@
+# Rules, along with stories are used as training data for the bot and define 
+# how a conversation should always happen provided an intent. 
+# If in doubt, use stories and do not over-use rules.
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: zir_action_fallback
