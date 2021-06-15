@@ -99,7 +99,7 @@ def print_responses(response_set, sqlite_cursor):
                 t = result["text"]
                 text_list.append(f"{highlight(fulltext, t)}")
             text_list.append(
-                "*" + f"{" > \"Jumeirah Hotels & Resorts\" reviewed on {date}" + " *")
+                "*" + f" > \"Jumeirah Hotels & Resorts\" reviewed on {date}" + " *")
             text_list.append("\n")
             break
     return text_list

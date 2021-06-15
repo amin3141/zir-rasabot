@@ -53,9 +53,11 @@ The results sum up to be this:
 
 ## Setup & Play
 
-You'll need to have Rasa installed and this repository. You might want to create
-a [virtual environment](https://docs.python.org/3/library/venv.html) to isolate
-the dependencies rasa requires.
+Clone this repository and afterwards install Rasa using following instructions.
+
+> You might want to create a
+> [virtual environment](https://docs.python.org/3/library/venv.html) to isolate
+> the dependencies rasa requires.
 
 ### Set-up Rasa
 
@@ -81,19 +83,20 @@ Operating System  :         Linux
 Python Path       :         /bin/python3
 ```
 
-> Windows & WSL works too
+> Windows & WSL (Windows Subsystem for Linux) works too
 
 ### Set-up repo
 
-To install dependencies for this repository to work install python dependencies
-from requirements.txt
+You should be in the cloned repository folder before running following commands.
+The bot uses spacy in its pipeline & requires you to have it installed. Run the
+following commands in shell
 
 ```bash
 pip install -r requirements.txt
 python3 -m spacy download en_core_web_md
 ```
 
-This will install the spacy model `en_core_web_md` this bot is configured with.
+This will install the spacy model `en_core_web_md` the bot is configured with.
 Now you'll need to train the rasa bot
 
 ```bash
