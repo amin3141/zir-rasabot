@@ -1,14 +1,18 @@
-FROM rasa/rasa:2.7.1-spacy-en AS trained
+# Rasa-bot with ZIR-AI fallback
 
-WORKDIR /hotel-bot
-COPY . /hotel-bot
-
-RUN rasa train
+# Run:
+#
+#     docker container run --publish 5005:5005 --name zir-ai-rasa zir-ai:rasa
+#
+# Build:
+#     docker build . -t zir-ai:rasa
 
 FROM rasa/rasa:2.7.1-spacy-en
 
-WORKDIR /hotel-bot
-COPY --from=trained /hotel-bot .
+WORKDIR /opt/zir/hotel-bot
+COPY . /opt/zir/hotel-bot
+
+RUN rasa train
 
 ENV RASA_REST_PORT=5005
 

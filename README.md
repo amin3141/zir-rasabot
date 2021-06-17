@@ -16,9 +16,11 @@ mechanism, which gets relevant information from ZIR Semantic Search.
 
 - [Rasa Bot & Zir](#rasa-bot--zir)
 - [Setup & Play](#setup--play)
-  - [Set-up Rasa](#set-up-rasa)
-  - [Set-up repo](#set-up-repo)
-  - [Running the demo](#running-the-demo)
+  - [Docker](#docker)
+  - [Manual](#manual)
+    - [Set-up Rasa](#set-up-rasa)
+    - [Set-up repo](#set-up-repo)
+    - [Running the demo](#running-the-demo)
 - [Customizing the bot](#customizing-the-bot)
   - [Data](#data)
   - [Rasa Custom Action](#rasa-custom-action)
@@ -53,13 +55,33 @@ The results sum up to be this:
 
 ## Setup & Play
 
-Clone this repository and afterwards install Rasa using following instructions.
+After Cloning this repository, you have two ways of setting up the rasa bot.
 
-> You might want to create a
+1. Use [Docker](#docker) to setup the bot or
+2. [Manually](#manual) install rasa on your machine
+
+### Docker
+
+Open your shell and from within the repository folder run the following commands
+to build and run the docker image
+
+```bash
+docker build . -t <YOURNAME>/rasa-bot
+docker run -p 5005:5005 <YOURNAME>/rasa-bot
+```
+
+Afterwards, load the [index.html](./www/index.html) in the www folder in your
+browser to talk to the bot
+
+### Manual
+
+If you want to setup the bot manually then please follow the steps below.
+
+> If you're installing rasa on your machine, you might want to create a
 > [virtual environment](https://docs.python.org/3/library/venv.html) to isolate
 > the dependencies rasa requires.
 
-### Set-up Rasa
+#### Set-up Rasa
 
 Follow the
 [rasa installation instructions](https://rasa.com/docs/rasa/installation) or
@@ -85,7 +107,7 @@ Python Path       :         /bin/python3
 
 > Windows & WSL (Windows Subsystem for Linux) works too
 
-### Set-up repo
+#### Set-up repo
 
 You should be in the cloned repository folder before running following commands.
 The bot uses spacy in its pipeline & requires you to have it installed. Run the
@@ -103,7 +125,7 @@ Now you'll need to train the rasa bot
 rasa train
 ```
 
-### Running the demo
+#### Running the demo
 
 While running the model, you are required to run the rasa action server along
 with the rasa bot. So in one terminal run
