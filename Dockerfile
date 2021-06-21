@@ -9,8 +9,13 @@
 
 FROM rasa/rasa:2.7.1-spacy-en
 
+USER root
+
 WORKDIR /opt/zir/hotel-bot
 COPY . /opt/zir/hotel-bot
+
+RUN chown rasa /opt/zir/hotel-bot
+USER rasa
 
 RUN rasa train
 
