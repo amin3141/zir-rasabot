@@ -57,12 +57,6 @@ nlu:
     - no way
     - not really
 
-- intent: ask_location
-  examples: |
-    - Where is the hotel? 
-    - The hotel is where? 
-    - In which city is the hotel? 
-
 - intent: jumeirah_living
   examples: |
     - What is Jumeirah Living?

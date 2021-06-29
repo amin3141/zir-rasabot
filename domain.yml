@@ -13,7 +13,6 @@ intents:
   - lost_and_found
   - jumeirah
   - reservations
-  - ask_location
 
 responses:
   utter_please_rephrase:
