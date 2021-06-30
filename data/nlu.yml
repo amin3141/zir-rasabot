@@ -57,45 +57,542 @@ nlu:
     - no way
     - not really
 
-- intent: ask_location
+- intent: booking_1
   examples: |
-    - Where is the hotel? 
-    - The hotel is where? 
-    - In which city is the hotel? 
+    What’s the minimum age requirement to check-in to Atlantis Dubai?
+    Whats the minimum age for the hotel?
+- intent: booking_2  
+  examples: |
+    What time is check-in and check-out at Atlantis Dubai?
+    Check in timings?
+- intent: booking_3
+  examples: |
+    How can I get an early check-in?
+    Can we do an early check in?
+- intent: booking_4
+  examples: |
+    Can we use the resort facilities if we arrive before check-in?
+    Use fascilities without checking in?
+- intent: booking_5
+  examples: |
+    What's included in your Half Board Package?
+    Fascilities in Hafl Board package?
+- intent: booking_6
+  examples: |
+    Do you offer All Inclusive Packages?
+    Any package with everything?
+- intent: rooms_1  
+  examples: |
+    Can you smoke in the rooms at Atlantis Dubai?
+    Smoking rules in room?
+- intent: rooms_2 
+  examples: |
+    Does Atlantis Dubai cater for people with disabilities?
+    People with disabilities?
+- intent: rooms_3 
+  examples: |
+    Are there tea and coffee making facilities in the room?
+    Room service like teas and coffees?
+- intent: rooms_4 
+  examples: |
+    Do you provide an iron and board in the rooms?
+    Can we use irons in rooms?
+- intent: rooms_5 
+  examples: |
+    Do you provide refrigerators in the room?
+    Fridge in rooms?
+- intent: rooms_6 
+  examples: |
+    Do you provide microwaves in the room?
+    microwaves in rooms?
+- intent: rooms_7 
+  examples: |
+    Are roll-away/sofa beds available?
+    Sofa cum bed in rooms?
+- intent: rooms_8 
+  examples: |
+    Do you have international adaptors?
+    Power outlets in rooms?
+- intent: rooms_9 
+  examples: |
+    Do you have phone chargers?
+    Do you provide charges for phones?
+- intent: rooms_10 
+  examples: |
+    If I book an Imperial Club Room, what's included?
+    Whats included in the imperial club rooms?
 
-- intent: jumeirah_living
+- intent: vist_1  
   examples: |
-    - What is Jumeirah Living?
-    - Is Jumeirah Living a package?
-    - What can yo tell of Jumeirah Living?
-    - Jumeirah Living?
-    - Jumeirah?
+    Do you allow pets in Atlantis Dubai?
+    Pets are allowed?
+- intent: vist_2
+  examples: |
+    Is there free WiFi at Atlantis Dubai?
+    Free wifi?
+- intent: vist_3  
+  examples: |
+    What’s the weather in Dubai like?
+    How's the weather nearby?
+- intent: vist_4  
+  examples: |
+    Do you have parking for hotel guests at Atlantis Dubai?
+    parking spots for the hotel?
+- intent: vist_5  
+  examples: |
+    Do you offer parking for non-hotel guests?
+    Parking for hotel guests?
+- intent: vist_6  
+  examples: |
+    Do you provide transportation from and to the airport or port?
+    From the airpot and back, do you offer transportation?
 
-- intent: jumeirah_one
+- intent: vist_7  
   examples: |
-    - What is Jumeirah One?
-    - Is Jumeirah One a package?
-    - What can yo tell of Jumeirah One?
-    - Jumeirah One?
-    - Jumeirah?
+    How much is a taxi from Dubai Airport to Atlantis?
+    Taxi cost from the airport?
+- intent: vist_8  
+  examples: |
+    How much is a taxi from Abu Dhabi Airport to Atlantis?
+    Taxi cost form the airport?
+- intent: vist_9  
+  examples: |
+    Do you offer a free shuttle bus to and from the airport?
+    Shuttle service to and from the airport?
+- intent: vist_10  
+  examples: |
+    Do you provide free shuttle buses to the malls?
+    Shuttle service to and from the mall?
+- intent: vist_11  
+  examples: |
+    What's the dress code during Ramadan?
+    Dress code during Ramadan?
+- intent: vist_11  
+  examples: |
+    Are there any prayer rooms in Atlantis Dubai?
+    Mosque in the hotel?
+- intent: vist_12  
+  examples: |
+    Can I visit Atlantis Dubai if I’m not staying at the hotel?
+    Visiting hours for the hotel?
+- intent: vist_13  
+  examples: |
+    Do you have a medical clinic or pharmacy in the hotel?
+    Are the doctor available?
+- intent: vist_14  
+  examples: |
+    Do you provide hotel guests with towels for the beach and the pools?
+    Towels for the hotel guests when visiting the beach or pool?
+- intent: vist_15  
+  examples: |
+    How do I check out?
+    What's the process to check out of the hotel?
+- intent: vist_16  
+  examples: |
+    How can I arrange a late check-out?
+    Can i change my check out times?
+- intent: vist_17  
+  examples: |
+    Can I still use the hotel facilities once I've checked out? 
+    Use hotel fascilities when cheked out?
+- intent: vist_18  
+  examples: |
+    How can I provide feedback on my stay?
+    Where can i find the feedback forms?
+- intent: vist_19  
+  examples: |
+    How can I get a copy of my bill?
+    Do you send a copy of my bill?
+- intent: vist_20  
+  examples: |
+    I left something at the hotel, can you help me find it?
+    Lost something in the hotel, can you help me find it?
 
-- intent: lost_and_found
-  examples: |
-    - What is your policy on list and found items?
-    - I lost something, can it be returned?
-    - Luggage lost
-    - Lost my phone.
-    - Return a lost items?
 
-- intent: jumeirah
+- intent: restaurant_1  
   examples: |
-    - What is Jumeirah?
-    - Is Jumeirah a hotel or a brand?
+    Which restaurants are suitable for families at Atlantis Dubai?
+    Restaurants for faimiles?
+- intent: restaurant_2  
+  examples: |
+    Which restaurants are suitable for couples at Atlantis Dubai?
+    Restaurants for couples?
+- intent: restaurant_3  
+  examples: |
+    Can I book brunch at Atlantis Dubai?
+    Brunch at the hotel restaurants?
+- intent: restaurant_4  
+  examples: |
+    Is there a minimum age policy at your restaurants?
+    Any age limits on goind to the restaurants?
+- intent: restaurant_5  
+  examples: |
+    What’s included in my Half Board Package?
+    What is Half Boad package?
+- intent: restaurant_6  
+  examples: |
+    What's the smoking policy for Atlantis Dubai’s restaurants?
+    Can we smoke in the restaurants?
+- intent: restaurant_7  
+  examples: |
+    Do you provide non-smoking areas?
+    Are there any non-smoking areas in restaurants?
+- intent: restaurant_8  
+  examples: |
+    Do you have a dress code in your restaurants?
+    What is the dress code for the restaurants?
+- intent: restaurant_9  
+  examples: |
+    Which restaurants have live entertainment at Atlantis Dubai?
+    Where can i enjoy food with some live shows?
+- intent: restaurant_10  
+  examples: |
+    Is there a cancellation policy for bookings at Atlantis Dubai restaurants?
+    Can i cancel my bookings in the restaurants?
+- intent: restaurant_11  
+  examples: |
+    What is the minimum age to drink alcohol?
+    Can kids drink alcohol?
+- intent: restaurant_12 
+  examples: |
+    Am I able to book Afternoon Tea in any of your restaurants?
+    Afternoon tea bookings?
+- intent: restaurant_13  
+  examples: |
+    Do you have a minimum spend in any of your restaurants or bars?
+    Is there any minimum requirement for spending in the restaurants?
+- intent: restaurant_14  
+  examples: |
+    How do I make a reservation at your restaurants or bars?
+    Can you help me make a reservation at the restaurants?
+- intent: restaurant_15  
+  examples: |
+    How can I request copies of your menus?
+    Can i get a copy of the menus at the restaurants?
+- intent: restaurant_16  
+  examples: |
+    How many restaurants and bars do you have?
+    How many restaurants do you have?
+- intent: restaurant_17  
+  examples: |
+    Do you offer a good variety of vegetarian food?
+    Vegan food, do the restaurants offer it?
+- intent: restaurant_18  
+  examples: |
+    Do you cater to lactose intolerance?
+    I am lactose intolerance, can you help?
+- intent: restaurant_19  
+  examples: |
+    Do you have vegan options?
+    Restaurants serving vegan food?
+- intent: restaurant_20 
+  examples: |
+    Do you cater to people with a gluten intolerance?
+    I am gluten intolerant. Can you help?
+- intent: restaurant_1  
+  examples: |
+    How do I arrange a cake for a special occasion?
+    Cakes and sweets for special occasion?
+- intent: restaurant_1  
+  examples: |
+    Can you assist me in arranging a special celebration?
+    Birthday party arrangements?
+- intent: restaurant_21  
+  examples: |
+    Do you offer catering services?
+    Catering services?
+- intent: restaurant_22  
+  examples: |
+    Can I get take away or delivery?
+    Take away services at restaurants?
+- intent: restaurant_23 
+  examples: |
+    Are there restrictions during Ramadan? 
+    Are restaurants open during Ramadan? 
+- intent: restaurant_24  
+  examples: |
+    Are children allowed in your bars?
+    Can i bring children in the bar?
+- intent: restaurant_25  
+  examples: |
+    If I'm late, how long will you hold my reservation for?
+    Reservations have a buffer of how much time.
+- intent: restaurant_26  
+  examples: |
+    How do I make a group booking?
+    Group booking?
+- intent: restaurant_27  
+  examples: |
+    What time is happy hour?
+    What is happy hour?
+- intent: restaurant_28  
+  examples: |
+    Do you have a ladies night?
+    What do you provide in ladies night?
 
-- intent: reservations
+
+
+- intent: dolphin_1  
   examples: |
-    - How many rooms do you have?
-    - i want to reserve rooms
-    - Rooms available
-    - Book a room
-    - Need a place to stay for the night
+    How much is a dolphin experience?
+    Whats the cost for the dolphin experience?
+- intent: dolphin_2  
+  examples: |
+    What's the minimum age for a dolphin experience?
+    Any minimum age for the dolhpin show?
+- intent: dolphin_3  
+  examples: |
+    If I'm a hotel guest, do I receive a discount?
+    Discounts for guests?
+- intent: dolphin_4  
+  examples: |
+    Are photos included in the price I pay?
+    Official photos are for purchase or free?
+- intent: dolphin_5  
+  examples: |
+    What's included in the price I pay?
+    What comes with the ticket?
+- intent: dolphin_6  
+  examples: |
+    Do I have to be able to swim?
+    I don't know swimming, can i still come?
+- intent: dolphin_7  
+  examples: |
+    If I book a dolphin or sea lion interaction, am I allowed to use the hotel’s pools and beaches?
+    hotel’s pools and beaches are open for the ticket holders for dolphin interactions?
+- intent: dolphin_8  
+  examples: |
+    How much is a sea lion experience?
+    What's the cost for the sea lion show?
+- intent: dolphin_9  
+  examples: |
+    What's the minimum age to do a sea lion experience?
+    Minumum age for the sea lion show?
+- intent: dolphin_10  
+  examples: |
+    Do you provide parking?
+    Parking for hotel?
+- intent: dolphin_11  
+  examples: |
+    Do you recommend/make interaction bookings for guests with disabilities?
+    I am disabled, is the dolhpin show still enjoyable?
+- intent: dolphin_12  
+  examples: |
+    Am I allowed to book an interaction if I'm pregnant?
+    Interaction in pregnency?
+- intent: dolphin_13  
+  examples: |
+    Am I allowed take my camera in the water?
+    Can i bring my own camera under water?
+
+
+
+- intent: aqua_1  
+  examples: |
+    What's the price for adults and for children?
+    Whats the price for aqua for children?
+- intent: aqua_2  
+  examples: |
+    What are the opening times for Aquaventure Waterpark?
+    Timings for the Aquaventure Waterpark?
+- intent: aqua_3  
+  examples: |
+    Can I pay extra for a Fast Track Pass or VIP Access?
+    Pay extra for the fast track pass or vip access?
+- intent: aqua_4  
+  examples: |
+    Do you charge for lockers?
+    Locker charges?
+- intent: aqua_5  
+  examples: |
+    Do you charge for towels?
+    Charges for towel?
+- intent: aqua_6  
+  examples: |
+    Do you provide parking?
+    Parking for the hotel Aquaventure Waterpark?
+- intent: aqua_7  
+  examples: |
+    Are we allowed to bring our own food and drink?
+    Can we bring our own food?
+- intent: aqua_8  
+  examples: |
+    What's the minimum age to access the waterpark alone?
+    Can kids come to the Aquaventure Waterpark?
+- intent: aqua_9  
+  examples: |
+    How long does it take to do all of the rides? 
+    How much does it take for it all in Aquaventure Waterpark?
+- intent: aqua_10  
+  examples: |
+    If I book tickets to the waterpark, does this include access to The Lost Chambers Aquarium?
+    What's included in the Aquaventure Waterpark ticket?
+- intent: aqua_11  
+  examples: |
+    What's the dress policy?
+    Whats the dress policy for Aquaventure Waterpark?
+- intent: aqua_12  
+  examples: |
+    If I bring my nanny, do I need to pay for them too
+    Can i bring a nanny in Aquaventure Waterpark?
+- intent: aqua_13  
+  examples: |
+    Are we allowed to bring buggies into the waterpark?
+    Can we bring buggies in Aquaventure Waterpark?
+- intent: aqua_14 
+  examples: |
+    Do you cater for people with disabilities?
+    disabilities and Aquaventure Waterpark?
+- intent: aqua_15 
+  examples: |
+    Am I allowed to visit the waterpark if I'm pregnant?
+    pregnency and Aquaventure Waterpark?
+- intent: aqua_16 
+  examples: |
+    Am I allowed to use my camera and selfie stick on the water slides?
+    Can i bring my own camera to Aquaventure Waterpark?
+
+
+- intent: kids_1  
+  examples: |
+    What is Atlantis Kids Club?
+    What happens in the Atlantis Kids Club?
+- intent: kids_2  
+  examples: |
+    What are the hours of operation?
+    What are the timings for Atlantis Kids Club?
+- intent: kids_3  
+  examples: |
+    What are the fees for each child?
+    Fees for Atlantis Kids Club?
+- intent: kids_4  
+  examples: |
+    Do you offer special theme nights?
+    Atlantis Kids Club at night?
+- intent: kids_5  
+  examples: |
+    What's the age limit for Kids Club?
+    Age limit for Atlantis Kids Club
+- intent: kids_6  
+  examples: |
+    My child is still in diapers, are they able to attend Kids Club?
+    Child wears diapers, still applicable for Atlantis Kids Club?
+- intent: kids_7  
+  examples: |
+    Is Lunch provided?
+    Is lunch inlucded in Atlantis Kids Club?
+- intent: kids_8  
+  examples: |
+    Do you provide snacks for children who are in the Atlantis Kids Club?
+    Do we have to bring our own snacks in Atlantis Kids Club?
+- intent: kids_9  
+  examples: |
+    If I'm a hotel guest, do I have to pay extra?
+    For hotel guests, do i have to pay extra?
+- intent: kids_10  
+  examples: |
+    Are tours given at Atlantis Kids Club?
+    I want to take a tour of Atlantis Kids Club
+- intent: kids_11 
+  examples: |
+    Do you offer babysitting services?
+    Is there babysitting services in the Atlantis Kids Club?
+- intent: kids_12 
+  examples: |
+    Can I book a party in Kids Club?
+    Arrange party in Atlantis Kids Club?
+- intent: kids_13 
+  examples: |
+    Can adults go inside the Kids Club during a birthday party?
+    Adults in Atlantis Kids Club for parties?
+- intent: kids_14 
+  examples: |
+    What is The Zone?
+    Atlantis Kids Club Zone?
+- intent: kids_15 
+  examples: |
+    What activities do you offer?
+    Activities in Atlantis Kids Club?
+- intent: kids_16 
+  examples: |
+    When is The Zone open?
+    Timing for Atlantis Kids Club Zone?
+- intent: kids_17 
+  examples: |
+    What is age policy?
+    Age restrictions for Atlantis Kids Club?
+- intent: kids_18 
+  examples: |
+    Can parents join?
+    Parents in Atlantis Kids Club?
+- intent: kids_19 
+  examples: |
+    What is the admission fee?
+    admission fee for Atlantis Kids Club?
+- intent: kids_20 
+  examples: |
+    Do you offer meals?
+    Meals in Atlantis Kids Club?
+- intent: kids_21 
+  examples: |
+    Do you serve drinks and snacks?
+    Drinks and snaks in Atlantis Kids Club?
+- intent: kids_22 
+  examples: |
+    How do my children pay for their snacks and soft drinks?
+    Payment for snaks in Atlantis Kids Club?
+- intent: kids_23 
+  examples: |
+    Can I book a party at The Zone?
+    Party in Atlantis Kids Club Zone?
+
+
+
+- intent: spa_1
+  examples: |
+    What time does the spa and the fitness center open?
+    Timings for spa and fitness?
+- intent: spa_2
+  examples: |
+    Is the spa and fitness center access complimentary for in-house guests?
+    In-house guests complimentary for guests?
+
+    
+- intent: pool_1
+  examples: |
+    Which water sports activities do you offer?
+    Activities in water sports?
+- intent: pool_2
+  examples: |
+    What are the pool and beach timings?
+    Timings for pool and beach?
+- intent: pool_3
+  examples: |
+    Do you have lifeguards supervising your pools and beaches?
+    lifeguards at pools and beaches?
+
+
+- intent: retial_1
+  examples: |
+    Do you have a mobile phone shop in the resort?
+    My phone broke, can i get it repaired?
+- intent: retial_2
+  examples: |
+    Do you have a pharmacy at the resort?
+    Clinic and pharmacy at the resort?
+- intent: retial_3
+  examples: |
+    Do you have a souvenir shop?
+    Is there a Souvenir shop in the resort?
+- intent: retial_4
+  examples: |
+    Do you have a swimwear shop?
+    Is there a swimwear shop in the resort?
+- intent: retial_5
+  examples: |
+    How much are the Palm Monorail tickets for?
+    Pricing for the tickets in Palm Monorail?
+- intent: retial_6
+  examples: |
+    What are the Palm Monorail timings?
+    Timings for Palm Monorail?
