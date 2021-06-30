@@ -1,935 +1,915 @@
-# This file presents stories or the conversations likely to happen 
+# This file presents stories or the conversations likely to happen
 # with the user. Stories are also training data for the bot to stitch intents
 # with actions & to behave more like a human.
 version: "2.0"
 
 stories:
-
-- story: booking_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: booking_1
-  - action: utter_booking_1
-
-- story: booking_2  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: booking_2  
-  - action: utter_booking_2  
-
-- story: booking_3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: booking_3
-  - action: utter_booking_3
-
-- story: booking_4
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: booking_4
-  - action: utter_booking_4
-
-- story: booking_5
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: booking_5
-  - action: utter_booking_5
-
-- story: booking_6
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: booking_6
-  - action: utter_booking_6
-
-
-- story: rooms_1  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_1  
-  - action: utter_rooms_1  
-
-- story: rooms_2 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_2 
-  - action: utter_rooms_2 
-
-- story: rooms_3 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_3 
-  - action: utter_rooms_3 
-
-- story: rooms_4 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_4 
-  - action: utter_rooms_4 
-
-- story: rooms_5 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_5 
-  - action: utter_rooms_5 
-
-- story: rooms_6 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_6 
-  - action: utter_rooms_6 
-
-- story: rooms_7 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_7 
-  - action: utter_rooms_7 
-
-- story: rooms_8 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_8 
-  - action: utter_rooms_8 
-
-- story: rooms_9 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_9 
-  - action: utter_rooms_9 
-
-- story: rooms_10 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: rooms_10 
-  - action: utter_rooms_10 
-
-
-- story: vist_1  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_1  
-  - action: utter_vist_1  
-
-- story: vist_2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_2
-  - action: utter_vist_2
-
-- story: vist_3  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_3  
-  - action: utter_vist_3  
-
-- story: vist_4  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_4  
-  - action: utter_vist_4  
-
-- story: vist_5  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_5  
-  - action: utter_vist_5  
-
-- story: vist_6  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_6  
-  - action: utter_vist_6  
-
-- story: vist_7  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_7  
-  - action: utter_vist_7  
-
-- story: vist_8  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_8  
-  - action: utter_vist_8  
-
-- story: vist_9  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_9  
-  - action: utter_vist_9  
-
-- story: vist_10  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_10  
-  - action: utter_vist_10  
-
-- story: vist_11  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_11  
-  - action: utter_vist_11  
-
-- story: vist_12  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_12  
-  - action: utter_vist_12  
-
-- story: vist_13  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_13  
-  - action: utter_vist_13  
-
-- story: vist_14  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_14  
-  - action: utter_vist_14  
-
-- story: vist_15  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_15  
-  - action: utter_vist_15  
-
-- story: vist_16  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_16  
-  - action: utter_vist_16  
-
-- story: vist_17  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_17  
-  - action: utter_vist_17  
-
-- story: vist_18  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_18  
-  - action: utter_vist_18  
-
-- story: vist_19  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_19  
-  - action: utter_vist_19  
-
-- story: vist_20  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_20  
-  - action: utter_vist_20  
-
-- story: vist_21  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: vist_21  
-  - action: utter_vist_21  
-
-
-
-- story: restaurant_1  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_1  
-  - action: utter_restaurant_1  
-
-- story: restaurant_2  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_2  
-  - action: utter_restaurant_2  
-
-- story: restaurant_3  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_3  
-  - action: utter_restaurant_3  
-
-- story: restaurant_4  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_4  
-  - action: utter_restaurant_4  
-
-- story: restaurant_5  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_5  
-  - action: utter_restaurant_5  
-
-- story: restaurant_6  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_6  
-  - action: utter_restaurant_6  
-
-- story: restaurant_7  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_7  
-  - action: utter_restaurant_7  
-
-- story: restaurant_8  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_8  
-  - action: utter_restaurant_8  
-
-- story: restaurant_9  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_9  
-  - action: utter_restaurant_9  
-
-- story: restaurant_10  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_10  
-  - action: utter_restaurant_10  
-
-- story: restaurant_11  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_11  
-  - action: utter_restaurant_11  
-
-- story: restaurant_12 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_12 
-  - action: utter_restaurant_12 
-
-- story: restaurant_13  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_13  
-  - action: utter_restaurant_13  
-
-- story: restaurant_14  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_14  
-  - action: utter_restaurant_14  
-
-- story: restaurant_15  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_15  
-  - action: utter_restaurant_15  
-
-- story: restaurant_16  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_16  
-  - action: utter_restaurant_16  
-
-- story: restaurant_17  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_17  
-  - action: utter_restaurant_17  
-
-- story: restaurant_18  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_18  
-  - action: utter_restaurant_18  
-
-- story: restaurant_19  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_19  
-  - action: utter_restaurant_19  
-
-- story: restaurant_20 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_20 
-  - action: utter_restaurant_20 
-
-- story: restaurant_21  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_21  
-  - action: utter_restaurant_21  
-
-- story: restaurant_22 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_22 
-  - action: utter_restaurant_22 
-
-- story: restaurant_23  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_23  
-  - action: utter_restaurant_23  
-
-- story: restaurant_24  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_24  
-  - action: utter_restaurant_24  
-
-- story: restaurant_25 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_25 
-  - action: utter_restaurant_25 
-
-- story: restaurant_26  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_26  
-  - action: utter_restaurant_26  
-
-- story: restaurant_27  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_27  
-  - action: utter_restaurant_27  
-
-- story: restaurant_28  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_28  
-  - action: utter_restaurant_28  
-
-- story: restaurant_29  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_29  
-  - action: utter_restaurant_29  
-
-- story: restaurant_30  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: restaurant_30  
-  - action: utter_restaurant_30  
-
-
-
-
-- story: dolphin_1  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_1  
-  - action: utter_dolphin_1  
-
-- story: dolphin_2  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_2  
-  - action: utter_dolphin_2  
-
-- story: dolphin_3  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_3  
-  - action: utter_dolphin_3  
-
-- story: dolphin_4  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_4  
-  - action: utter_dolphin_4  
-
-- story: dolphin_5  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_5  
-  - action: utter_dolphin_5  
-
-- story: dolphin_6  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_6  
-  - action: utter_dolphin_6  
-
-- story: dolphin_7  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_7  
-  - action: utter_dolphin_7  
-
-- story: dolphin_8  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_8  
-  - action: utter_dolphin_8  
-
-- story: dolphin_9  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_9  
-  - action: utter_dolphin_9  
-
-- story: dolphin_10  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_10  
-  - action: utter_dolphin_10  
-
-- story: dolphin_11  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_11  
-  - action: utter_dolphin_11  
-
-- story: dolphin_12  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_12  
-  - action: utter_dolphin_12  
-
-- story: dolphin_13  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: dolphin_13  
-  - action: utter_dolphin_13  
-
-
-
-
-- story: aqua_1  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_1  
-  - action: utter_aqua_1  
-
-- story: aqua_2  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_2  
-  - action: utter_aqua_2  
-
-- story: aqua_3  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_3  
-  - action: utter_aqua_3  
-
-- story: aqua_4  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_4  
-  - action: utter_aqua_4  
-
-- story: aqua_5  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_5  
-  - action: utter_aqua_5  
-
-- story: aqua_6  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_6  
-  - action: utter_aqua_6  
-
-- story: aqua_7  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_7  
-  - action: utter_aqua_7  
-
-- story: aqua_8  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_8  
-  - action: utter_aqua_8  
-
-- story: aqua_9  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_9  
-  - action: utter_aqua_9  
-
-- story: aqua_10  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_10  
-  - action: utter_aqua_10  
-
-- story: aqua_11  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_11  
-  - action: utter_aqua_11  
-
-- story: aqua_12  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_12  
-  - action: utter_aqua_12  
-
-- story: aqua_13  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_13  
-  - action: utter_aqua_13  
-
-- story: aqua_14 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_14 
-  - action: utter_aqua_14 
-
-- story: aqua_15 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_15 
-  - action: utter_aqua_15 
-
-- story: aqua_16 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: aqua_16 
-  - action: utter_aqua_16 
-
-
-
-- story: kids_1  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_1  
-  - action: utter_kids_1  
-
-- story: kids_2  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_2  
-  - action: utter_kids_2  
-
-- story: kids_3  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_3  
-  - action: utter_kids_3  
-
-- story: kids_4  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_4  
-  - action: utter_kids_4  
-
-- story: kids_5  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_5  
-  - action: utter_kids_5  
-
-- story: kids_6  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_6  
-  - action: utter_kids_6  
-
-- story: kids_7  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_7  
-  - action: utter_kids_7  
-
-- story: kids_8  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_8  
-  - action: utter_kids_8  
-
-- story: kids_9  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_9  
-  - action: utter_kids_9  
-
-- story: kids_10  
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_10  
-  - action: utter_kids_10  
-
-- story: kids_11 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_11 
-  - action: utter_kids_11 
-
-- story: kids_12 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_12 
-  - action: utter_kids_12 
-
-- story: kids_13 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_13 
-  - action: utter_kids_13 
-
-- story: kids_14 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_14 
-  - action: utter_kids_14 
-
-- story: kids_15 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_15 
-  - action: utter_kids_15 
-
-- story: kids_16 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_16 
-  - action: utter_kids_16 
-
-- story: kids_17 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_17 
-  - action: utter_kids_17 
-
-- story: kids_18 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_18 
-  - action: utter_kids_18 
-
-- story: kids_19 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_19 
-  - action: utter_kids_19 
-
-- story: kids_20 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_20 
-  - action: utter_kids_20 
-
-- story: kids_21 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_21 
-  - action: utter_kids_21 
-
-- story: kids_22 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_22 
-  - action: utter_kids_22 
-
-- story: kids_23 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: kids_23 
-  - action: utter_kids_23 
-
-
-
-
-- story: spa_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: spa_1
-  - action: utter_spa_1
-
-- story: spa_2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: spa_2
-  - action: utter_spa_2
-
-    
-
-- story: pool_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pool_1
-  - action: utter_pool_1
-
-- story: pool_2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pool_2
-  - action: utter_pool_2
-
-- story: pool_3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: pool_3
-  - action: utter_pool_3
-
-
-
-- story: retail_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: retail_1
-  - action: utter_retail_1
-
-- story: retail_2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: retail_2
-  - action: utter_retail_2
-
-- story: retail_3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: retail_3
-  - action: utter_retail_3
-
-- story: retail_4
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: retail_4
-  - action: utter_retail_4
-
-- story: retail_5
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: retail_5
-  - action: utter_retail_5
-
-- story: retail_6
-- intent: greet
-- action: utter_greet
-  steps:
-  - action: utter_retail_6
-  - intent: retail_6
+  - story: booking_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking_1
+      - action: utter_booking_1
+
+  - story: booking_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking_2
+      - action: utter_booking_2
+
+  - story: booking_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking_3
+      - action: utter_booking_3
+
+  - story: booking_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking_4
+      - action: utter_booking_4
+
+  - story: booking_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking_5
+      - action: utter_booking_5
+
+  - story: booking_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: booking_6
+      - action: utter_booking_6
+
+  - story: rooms_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_1
+      - action: utter_rooms_1
+
+  - story: rooms_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_2
+      - action: utter_rooms_2
+
+  - story: rooms_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_3
+      - action: utter_rooms_3
+
+  - story: rooms_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_4
+      - action: utter_rooms_4
+
+  - story: rooms_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_5
+      - action: utter_rooms_5
+
+  - story: rooms_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_6
+      - action: utter_rooms_6
+
+  - story: rooms_7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_7
+      - action: utter_rooms_7
+
+  - story: rooms_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_8
+      - action: utter_rooms_8
+
+  - story: rooms_9
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_9
+      - action: utter_rooms_9
+
+  - story: rooms_10
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: rooms_10
+      - action: utter_rooms_10
+
+  - story: visit_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_1
+      - action: utter_visit_1
+
+  - story: visit_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_2
+      - action: utter_visit_2
+
+  - story: visit_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_3
+      - action: utter_visit_3
+
+  - story: visit_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_4
+      - action: utter_visit_4
+
+  - story: visit_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_5
+      - action: utter_visit_5
+
+  - story: visit_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_6
+      - action: utter_visit_6
+
+  - story: visit_7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_7
+      - action: utter_visit_7
+
+  - story: visit_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_8
+      - action: utter_visit_8
+
+  - story: visit_9
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_9
+      - action: utter_visit_9
+
+  - story: visit_10
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_10
+      - action: utter_visit_10
+
+  - story: visit_11
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_11
+      - action: utter_visit_11
+
+  - story: visit_12
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_12
+      - action: utter_visit_12
+
+  - story: visit_13
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_13
+      - action: utter_visit_13
+
+  - story: visit_14
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_14
+      - action: utter_visit_14
+
+  - story: visit_15
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_15
+      - action: utter_visit_15
+
+  - story: visit_16
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_16
+      - action: utter_visit_16
+
+  - story: visit_17
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_17
+      - action: utter_visit_17
+
+  - story: visit_18
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_18
+      - action: utter_visit_18
+
+  - story: visit_19
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_19
+      - action: utter_visit_19
+
+  - story: visit_20
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_20
+      - action: utter_visit_20
+
+  - story: visit_21
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: visit_21
+      - action: utter_visit_21
+
+  - story: restaurant_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_1
+      - action: utter_restaurant_1
+
+  - story: restaurant_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_2
+      - action: utter_restaurant_2
+
+  - story: restaurant_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_3
+      - action: utter_restaurant_3
+
+  - story: restaurant_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_4
+      - action: utter_restaurant_4
+
+  - story: restaurant_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_5
+      - action: utter_restaurant_5
+
+  - story: restaurant_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_6
+      - action: utter_restaurant_6
+
+  - story: restaurant_7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_7
+      - action: utter_restaurant_7
+
+  - story: restaurant_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_8
+      - action: utter_restaurant_8
+
+  - story: restaurant_9
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_9
+      - action: utter_restaurant_9
+
+  - story: restaurant_10
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_10
+      - action: utter_restaurant_10
+
+  - story: restaurant_11
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_11
+      - action: utter_restaurant_11
+
+  - story: restaurant_12
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_12
+      - action: utter_restaurant_12
+
+  - story: restaurant_13
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_13
+      - action: utter_restaurant_13
+
+  - story: restaurant_14
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_14
+      - action: utter_restaurant_14
+
+  - story: restaurant_15
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_15
+      - action: utter_restaurant_15
+
+  - story: restaurant_16
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_16
+      - action: utter_restaurant_16
+
+  - story: restaurant_17
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_17
+      - action: utter_restaurant_17
+
+  - story: restaurant_18
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_18
+      - action: utter_restaurant_18
+
+  - story: restaurant_19
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_19
+      - action: utter_restaurant_19
+
+  - story: restaurant_20
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_20
+      - action: utter_restaurant_20
+
+  - story: restaurant_21
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_21
+      - action: utter_restaurant_21
+
+  - story: restaurant_22
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_22
+      - action: utter_restaurant_22
+
+  - story: restaurant_23
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_23
+      - action: utter_restaurant_23
+
+  - story: restaurant_24
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_24
+      - action: utter_restaurant_24
+
+  - story: restaurant_25
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_25
+      - action: utter_restaurant_25
+
+  - story: restaurant_26
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_26
+      - action: utter_restaurant_26
+
+  - story: restaurant_27
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_27
+      - action: utter_restaurant_27
+
+  - story: restaurant_28
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_28
+      - action: utter_restaurant_28
+
+  - story: restaurant_29
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_29
+      - action: utter_restaurant_29
+
+  - story: restaurant_30
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: restaurant_30
+      - action: utter_restaurant_30
+
+  - story: dolphin_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_1
+      - action: utter_dolphin_1
+
+  - story: dolphin_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_2
+      - action: utter_dolphin_2
+
+  - story: dolphin_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_3
+      - action: utter_dolphin_3
+
+  - story: dolphin_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_4
+      - action: utter_dolphin_4
+
+  - story: dolphin_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_5
+      - action: utter_dolphin_5
+
+  - story: dolphin_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_6
+      - action: utter_dolphin_6
+
+  - story: dolphin_7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_7
+      - action: utter_dolphin_7
+
+  - story: dolphin_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_8
+      - action: utter_dolphin_8
+
+  - story: dolphin_9
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_9
+      - action: utter_dolphin_9
+
+  - story: dolphin_10
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_10
+      - action: utter_dolphin_10
+
+  - story: dolphin_11
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_11
+      - action: utter_dolphin_11
+
+  - story: dolphin_12
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_12
+      - action: utter_dolphin_12
+
+  - story: dolphin_13
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: dolphin_13
+      - action: utter_dolphin_13
+
+  - story: aqua_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_1
+      - action: utter_aqua_1
+
+  - story: aqua_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_2
+      - action: utter_aqua_2
+
+  - story: aqua_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_3
+      - action: utter_aqua_3
+
+  - story: aqua_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_4
+      - action: utter_aqua_4
+
+  - story: aqua_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_5
+      - action: utter_aqua_5
+
+  - story: aqua_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_6
+      - action: utter_aqua_6
+
+  - story: aqua_7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_7
+      - action: utter_aqua_7
+
+  - story: aqua_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_8
+      - action: utter_aqua_8
+
+  - story: aqua_9
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_9
+      - action: utter_aqua_9
+
+  - story: aqua_10
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_10
+      - action: utter_aqua_10
+
+  - story: aqua_11
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_11
+      - action: utter_aqua_11
+
+  - story: aqua_12
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_12
+      - action: utter_aqua_12
+
+  - story: aqua_13
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_13
+      - action: utter_aqua_13
+
+  - story: aqua_14
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_14
+      - action: utter_aqua_14
+
+  - story: aqua_15
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_15
+      - action: utter_aqua_15
+
+  - story: aqua_16
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: aqua_16
+      - action: utter_aqua_16
+
+  - story: kids_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_1
+      - action: utter_kids_1
+
+  - story: kids_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_2
+      - action: utter_kids_2
+
+  - story: kids_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_3
+      - action: utter_kids_3
+
+  - story: kids_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_4
+      - action: utter_kids_4
+
+  - story: kids_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_5
+      - action: utter_kids_5
+
+  - story: kids_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_6
+      - action: utter_kids_6
+
+  - story: kids_7
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_7
+      - action: utter_kids_7
+
+  - story: kids_8
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_8
+      - action: utter_kids_8
+
+  - story: kids_9
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_9
+      - action: utter_kids_9
+
+  - story: kids_10
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_10
+      - action: utter_kids_10
+
+  - story: kids_11
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_11
+      - action: utter_kids_11
+
+  - story: kids_12
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_12
+      - action: utter_kids_12
+
+  - story: kids_13
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_13
+      - action: utter_kids_13
+
+  - story: kids_14
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_14
+      - action: utter_kids_14
+
+  - story: kids_15
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_15
+      - action: utter_kids_15
+
+  - story: kids_16
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_16
+      - action: utter_kids_16
+
+  - story: kids_17
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_17
+      - action: utter_kids_17
+
+  - story: kids_18
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_18
+      - action: utter_kids_18
+
+  - story: kids_19
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_19
+      - action: utter_kids_19
+
+  - story: kids_20
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_20
+      - action: utter_kids_20
+
+  - story: kids_21
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_21
+      - action: utter_kids_21
+
+  - story: kids_22
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_22
+      - action: utter_kids_22
+
+  - story: kids_23
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: kids_23
+      - action: utter_kids_23
+
+  - story: spa_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: spa_1
+      - action: utter_spa_1
+
+  - story: spa_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: spa_2
+      - action: utter_spa_2
+
+  - story: pool_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: pool_1
+      - action: utter_pool_1
+
+  - story: pool_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: pool_2
+      - action: utter_pool_2
+
+  - story: pool_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: pool_3
+      - action: utter_pool_3
+
+  - story: retail_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: retail_1
+      - action: utter_retail_1
+
+  - story: retail_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: retail_2
+      - action: utter_retail_2
+
+  - story: retail_3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: retail_3
+      - action: utter_retail_3
+
+  - story: retail_4
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: retail_4
+      - action: utter_retail_4
+
+  - story: retail_5
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: retail_5
+      - action: utter_retail_5
+
+  - story: retail_6
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_retail_6
+      - intent: retail_6
