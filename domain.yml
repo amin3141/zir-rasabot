@@ -176,34 +176,34 @@ responses:
   utter_booking_7:
     - text: "No, we only offer Bed and Breakfast, and Half Board Packages."
 
-  utter_room_1:
+  utter_rooms_1:
     - text: "We have separate smoking floors at Atlantis Dubai. The smoking rooms can be requested in advance, however, rooms are strictly subject to availability."
 
-  utter_room_2:
+  utter_rooms_2:
     - text: "We have rooms with provisions and amenities for people with disabilities. At the time of booking rooms, the details must be shared for more specifications and to check availability. Available amenities and provisions include wheelchairs (requires a deposit of AED 1000), shower stools, toilet frames and physically challenged phones. These items are strictly subject to availability."
 
-  utter_room_3:
+  utter_rooms_3:
     - text: "We offer complimentary coffee sachets, tea bags, sugar, milk sachets and water kettles in all rooms."
 
-  utter_room_4:
+  utter_rooms_4:
     - text: "Yes, an iron and ironing board are provided in all the rooms at Atlantis Dubai."
 
-  utter_room_5:
+  utter_rooms_5:
     - text: "Refrigerators are subject to availability. They can be requested at the time of your booking, or during your stay by dialing “0” for assistance."
 
-  utter_room_6:
+  utter_rooms_6:
     - text: "Microwaves are subject to availability. They can be requested at the time of your booking, or during your stay by dialing “0” for assistance."
 
-  utter_room_7:
+  utter_rooms_7:
     - text: "Roll-away/ sofa beds are subject to availability. They can be requested at the time of your booking, or during your stay by dialing “0” for assistance."
 
-  utter_room_8:
+  utter_rooms_8:
     - text: "Yes, we can provide international adaptors upon request, subject to availability. Please dial 0 to place your request."
 
-  utter_room_9:
+  utter_rooms_9:
     - text: "Yes, we have a charging facility at the Business Centre, which is open daily from 8:00am – 8:00pm."
 
-  utter_room_10:
+  utter_rooms_10:
     - text: "A private check-in and check-out desk in the Imperial Club Lounge for comfort and ease. Dedicated Imperial Club Concierge team. Continental Breakfast from 7am – 11am.  Daily afternoon tea from 3pm – 4pm. Inclusive of a bites such as scones, quiches and pastries, a selection of tea and beverages. There’s even milkshakes, sandwiches, and sweet treats for the little ones. Daily sunset happy hour from 5pm – 7pm. Selection of complimentary beers and wines, fruity cocktails or mocktails, perfectly complemented by elegant canapés to enjoy. Happy hour can also be enjoyed on the Imperial Club Beach. Complimentary Kids Club and The Zone morning or afternoon sessions. AED 50 credit gaming card at Wavehouse once per stay. Exclusive access to Imperial Club beach with a fully-serviced bar and personal service attendants. Complimentary 30 minutes added to any 60 minute ShuiQi Spa treatment booked. Unlimited access to the wet facility areas at the ShuiQi Spa."
 
   utter_visit_1:
