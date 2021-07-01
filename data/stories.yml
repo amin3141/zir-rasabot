@@ -911,5 +911,5 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
-      - action: utter_retail_6
       - intent: retail_6
+      - action: utter_retail_6
