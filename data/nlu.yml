@@ -26,7 +26,6 @@ nlu:
 
   - intent: goodbye
     examples: |
-      - good afternoon
       - cu
       - good by
       - cee you later
@@ -59,25 +58,45 @@ nlu:
 
   - intent: booking_1
     examples: |
+      - Do I need to pay a security deposit at Atlantis Dubai? 
+      - What is the amount of security to pay for Atlantis Dubai?
+      - How much security do i need to pay at the hotel stay?
+      - is there any security to party?
+      - Is there anything to pay at checking in?
+      - How much is the security deposit?
+  - intent: booking_2
+    examples: |
       - What’s the minimum age requirement to check-in to Atlantis Dubai?
       - Whats the minimum age for the hotel?
-  - intent: booking_2
+      - Is there any age limitation to do a check-in in the hotel?
+      - Age restrictions for checking-in?
+      - Wat are the age limitations for checking in the hotel?
+      - Hotel age restrictions?
+      - Can under 18 do a check-in in the hotel?
+  - intent: booking_3
     examples: |
       - What time is check-in and check-out at Atlantis Dubai?
       - Check in timings?
-  - intent: booking_3
+      - What time should we come for check in?
+      - What is the check out time of the hotel?
+      - How late can we check out of the hotel?
+      - How late can we check in the hotel?
+      - Whats the check in and out time?
+  - intent: booking_4
     examples: |
       - How can I get an early check-in?
       - Can we do an early check in?
-  - intent: booking_4
+      - How early can i check in the hotel?
+      -
+  - intent: booking_5
     examples: |
       - Can we use the resort facilities if we arrive before check-in?
       - Use fascilities without checking in?
-  - intent: booking_5
+  - intent: booking_6
     examples: |
       - What's included in your Half Board Package?
       - Fascilities in Hafl Board package?
-  - intent: booking_6
+  - intent: booking_7
     examples: |
       - Do you offer All Inclusive Packages?
       - Any package with everything?
@@ -121,7 +140,6 @@ nlu:
     examples: |
       - If I book an Imperial Club Room, what's included?
       - Whats included in the imperial club rooms?
-
   - intent: visit_1
     examples: |
       - Do you allow pets in Atlantis Dubai?
@@ -146,7 +164,6 @@ nlu:
     examples: |
       - Do you provide transportation from and to the airport or port?
       - From the airpot and back, do you offer transportation?
-
   - intent: visit_7
     examples: |
       - How much is a taxi from Dubai Airport to Atlantis?
@@ -193,7 +210,7 @@ nlu:
       - Can i change my check out times?
   - intent: visit_18
     examples: |
-      - Can I still use the hotel facilities once I've checked out? 
+      - Can I still use the hotel facilities once I've checked out?
       - Use hotel fascilities when cheked out?
   - intent: visit_19
     examples: |
@@ -207,47 +224,81 @@ nlu:
     examples: |
       - I left something at the hotel, can you help me find it?
       - Lost something in the hotel, can you help me find it?
-
   - intent: restaurant_1
     examples: |
       - Which restaurants are suitable for families at Atlantis Dubai?
       - Restaurants for faimiles?
+      - Are there restaurants where families can dine in?
+      - Can families dine in the restaurants?
+      - Are some of your restaurants family safe?
+      - Can we bring families to any of your restaurants?
+      - Family restaurants?
+      - Good family restaurant
+      - Good restaurant to take my kids and wife
+      - Food options for families
   - intent: restaurant_2
     examples: |
       - Which restaurants are suitable for couples at Atlantis Dubai?
       - Restaurants for couples?
+      - Nice restaurant to go with my wife
+      - Nice restaurant to go with my hubby
+      - food for a married couple
   - intent: restaurant_3
     examples: |
       - Can I book brunch at Atlantis Dubai?
       - Brunch at the hotel restaurants?
+      - Do you have brunch options
+      - Is brunch available
+      - Brunch at Atlantis
   - intent: restaurant_4
     examples: |
       - Is there a minimum age policy at your restaurants?
       - Any age limits on goind to the restaurants?
+      - youngest age at restaurant
+      - are children allowed to eat at the restaurants
+      - can babies dine in the hotel?
   - intent: restaurant_5
     examples: |
       - What’s included in my Half Board Package?
       - What is Half Boad package?
+      - what meals are in the half Board pkg
+      - what food do i get in the Half Board
+      - is breakfast included in the Half Board?
   - intent: restaurant_6
     examples: |
       - What's the smoking policy for Atlantis Dubai’s restaurants?
       - Can we smoke in the restaurants?
+      - can I smoke cigars at the restaurant?
+      - can I smoke weed at the restaurant?
+      - is a joint allowed at the dining?
   - intent: restaurant_7
     examples: |
       - Do you provide non-smoking areas?
       - Are there any non-smoking areas in restaurants?
+      - I'm allergic to cigarette smoke. is there a zone I can sit?
+      - is there a no smoke zone
+      - smoke free sitting areas
   - intent: restaurant_8
     examples: |
       - Do you have a dress code in your restaurants?
       - What is the dress code for the restaurants?
+      - can I wear a wife beater to the restaurant
+      - what's the minimum dress to the restaurant
+      - proper attire for restaurant
   - intent: restaurant_9
     examples: |
       - Which restaurants have live entertainment at Atlantis Dubai?
       - Where can i enjoy food with some live shows?
+      - do you have live singing at the restaurant
+      - is there music band at the restaurant
+      - can I find Arabic music at the restaurant
   - intent: restaurant_10
     examples: |
       - Is there a cancellation policy for bookings at Atlantis Dubai restaurants?
       - Can i cancel my bookings in the restaurants?
+      - How do i cancel my book at the restaurant?
+      - I need to cancel my bookings for the restaurant.
+      - I cannot come to the restaurant, is there a cancel policy at the restaurant?
   - intent: restaurant_11
     examples: |
       - What is the minimum age to drink alcohol?
@@ -256,79 +307,135 @@ nlu:
     examples: |
       - Am I able to book Afternoon Tea in any of your restaurants?
       - Afternoon tea bookings?
+      - do you offer afternoon tea?
+      - can I visit a restaurant for afternoon tea?
+      - afternoon tea
   - intent: restaurant_13
     examples: |
       - Do you have a minimum spend in any of your restaurants or bars?
       - Is there any minimum requirement for spending in the restaurants?
+      - spending limits at your restaurant
+      - minimum payment at restaurants
+      - is there a smallest amount at your bar
   - intent: restaurant_14
     examples: |
       - How do I make a reservation at your restaurants or bars?
       - Can you help me make a reservation at the restaurants?
+      - where do I book a reservation at the restaurant
+      - where do I book a bar reservation
+      - telephone number for restaurant reservation
   - intent: restaurant_15
     examples: |
       - How can I request copies of your menus?
       - Can i get a copy of the menus at the restaurants?
+      - menu listing
+      - where can i get a menu
+      - are your menus online
   - intent: restaurant_16
     examples: |
       - How many restaurants and bars do you have?
       - How many restaurants do you have?
+      - how many eateries on site
+      - number of food places
+      - num food venues
   - intent: restaurant_17
     examples: |
       - Do you offer a good variety of vegetarian food?
       - Vegan food, do the restaurants offer it?
+      - what are the veg options
+      - vegetarian meal options
+      - do you offer hindu meals
   - intent: restaurant_18
     examples: |
       - Do you cater to lactose intolerance?
       - I am lactose intolerance, can you help?
+      - dairy free options
+      - lacstose-free meal options
+      - do you serve lactose free items
   - intent: restaurant_19
     examples: |
       - Do you have vegan options?
       - Restaurants serving vegan food?
+      - meat free options
+      - meals free of animal product
+      - do you offer vegan meals
   - intent: restaurant_20
     examples: |
       - Do you cater to people with a gluten intolerance?
       - I am gluten intolerant. Can you help?
+      - gluten free options
+      - do you offer gluten free meals
+      - meals sans gluten
   - intent: restaurant_21
     examples: |
       - How do I arrange a cake for a special occasion?
       - Cakes and sweets for special occasion?
+      - What's the fee for a cake with a message
+      - can i get a dessert delivered for a birthday?
+      - anniversary cake delivery?
   - intent: restaurant_22
     examples: |
       - Can you assist me in arranging a special celebration?
       - Birthday party arrangements?
+      - can you help me arrange a cake for someone
+      - can you arrange flowers for me?
+      - telephone numbers for celebration arrangements
   - intent: restaurant_23
     examples: |
       - Do you offer catering services?
       - Catering services?
+      - catering
+      - do you cater food to the conference halls?
+      - is catering offered?
   - intent: restaurant_24
     examples: |
       - Can I get take away or delivery?
       - Take away services at restaurants?
+      - Can I get food to go?
+      - which restaurants offer delivery service?
+      - can I get take away from restaurants
   - intent: restaurant_25
     examples: |
-      - Are there restrictions during Ramadan? 
+      - Are there restrictions during Ramadan?
       - Are restaurants open during Ramadan?
+      - ramazan hours at restaurant
+      - is restaurant open in rumzan
+      - can i get in room dining during Ramadan
   - intent: restaurant_26
     examples: |
       - Are children allowed in your bars?
       - Can i bring children in the bar?
+      - minimum age to enter a bar
+      - can i bring my kid to the bar
+      - can i bring infant in stroller to bar
   - intent: restaurant_27
     examples: |
       - If I'm late, how long will you hold my reservation for?
       - Reservations have a buffer of how much time.
+      - how long will you hold my reservation
+      - reservation hold time
+      - arrived late for reservation
   - intent: restaurant_28
     examples: |
       - How do I make a group booking?
       - Group booking?
+      - telephone number for group bookings
+      - group reservation
+      - book for my party
   - intent: restaurant_29
     examples: |
       - What time is happy hour?
       - What is happy hour?
+      - is there a happy hour?
+      - happy hour times?
+      - timeframe for happy hour
   - intent: restaurant_30
     examples: |
       - Do you have a ladies night?
-      - What do you provide in ladies night?
-
+      - Is there any ladies night out?
+      - is there a night for women that's free
+      - girl's night
+      - lady's night option?
   - intent: dolphin_1
     examples: |
       - How much is a dolphin experience?
@@ -381,7 +488,6 @@ nlu:
     examples: |
       - Am I allowed take my camera in the water?
       - Can i bring my own camera under water?
-
   - intent: aqua_1
     examples: |
       - What's the price for adults and for children?
@@ -416,7 +522,7 @@ nlu:
       - Can kids come to the Aquaventure Waterpark?
   - intent: aqua_9
     examples: |
-      - How long does it take to do all of the rides? 
+      - How long does it take to do all of the rides?
       - How much does it take for it all in Aquaventure Waterpark?
   - intent: aqua_10
     examples: |
@@ -446,7 +552,6 @@ nlu:
     examples: |
       - Am I allowed to use my camera and selfie stick on the water slides?
       - Can i bring my own camera to Aquaventure Waterpark?
-
   - intent: kids_1
     examples: |
       - What is Atlantis Kids Club?
@@ -539,7 +644,6 @@ nlu:
     examples: |
       - Can I book a party at The Zone?
       - Party in Atlantis Kids Club Zone?
-
   - intent: spa_1
     examples: |
       - What time does the spa and the fitness center open?
@@ -548,7 +652,6 @@ nlu:
     examples: |
       - Is the spa and fitness center access complimentary for in-house guests?
       - In-house guests complimentary for guests?
-
   - intent: pool_1
     examples: |
       - Which water sports activities do you offer?
@@ -561,7 +664,6 @@ nlu:
     examples: |
       - Do you have lifeguards supervising your pools and beaches?
       - lifeguards at pools and beaches?
-
   - intent: retail_1
     examples: |
       - Do you have a mobile phone shop in the resort?
