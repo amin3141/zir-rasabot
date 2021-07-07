@@ -92,62 +92,107 @@ nlu:
     examples: |
       - Can we use the resort facilities if we arrive before check-in?
       - Use fascilities without checking in?
+      - Before checking in can we use the fascilities?
+      - Can guests use the resort fascilities?
+      - Can the resort fascilities be used before check-in?
   - intent: booking_6
     examples: |
       - What's included in your Half Board Package?
-      - Fascilities in Hafl Board package?
+      - Fascilities in Half Board package?
+      - What does the Half Board package include?
+      - What does the Half Board include?
+      - What are the fascilities included in the Half Board package?
+      - Whats the difference between Half board package and other packages?
   - intent: booking_7
     examples: |
       - Do you offer All Inclusive Packages?
       - Any package with everything?
+      - Is there a package with everything included?
+      - Do you offer a package with everything included?
+      - Is there an all inclusive package?
   - intent: rooms_1
     examples: |
       - Can you smoke in the rooms at Atlantis Dubai?
       - Smoking rules in room?
+      - Can we smoke inside the room?
+      - Is smoking allowed in the rooms?
+      - Do you allow smoking inside the horel rooms?
   - intent: rooms_2
     examples: |
       - Does Atlantis Dubai cater for people with disabilities?
       - People with disabilities?
+      - For the disabled, do you provide wheelchairs?
+      - Is there special consideration for the disabled?
+      - How do you fasciliate the disabled?
   - intent: rooms_3
     examples: |
       - Are there tea and coffee making facilities in the room?
-      - Room service like teas and coffees?
+      - Is there a kettle in the room?
+      - Do you provide tea or coffee related fascilities inside the room?
+      - Do rooms have tean and coffee fascilities?
+      - Do you provide coffee maker inside the room?
   - intent: rooms_4
     examples: |
       - Do you provide an iron and board in the rooms?
       - Can we use irons in rooms?
+      - Can we iron our clothes in the room?
+      - Instead of sending clothes, can we iron them inside the room?
+      - Can we call in an iron and board from the room services?
   - intent: rooms_5
     examples: |
       - Do you provide refrigerators in the room?
       - Fridge in rooms?
+      - is there a fridge in the room?
+      - Do you provide fridge in rooms on requests or is it there by default?
+      - Do the rooms have fridge?
   - intent: rooms_6
     examples: |
       - Do you provide microwaves in the room?
       - microwaves in rooms?
+      - Is there a microwave in the rooms to heat food?
+      - How can we heat food in the room?
+      - On request, can you add in a microwave in the room?
   - intent: rooms_7
     examples: |
       - Are roll-away/sofa beds available?
       - Sofa cum bed in rooms?
+      - can we add an extra roll-away/sofa beds in the room?
+      - Do you provide a sofa cum bed in the room?
+      - Do you provide a roll away sofa in the room?
   - intent: rooms_8
     examples: |
       - Do you have international adaptors?
       - Power outlets in rooms?
+      - Do the rooms have a 110V outlet or the 220V?
+      - Do you provide international adaptors?
+      - Do you provide american charging outlets or Europian?
   - intent: rooms_9
     examples: |
       - Do you have phone chargers?
       - Do you provide charges for phones?
+      - Do you provide phone charges in the rooms?
+      - Do you provide phone charges in the room free of cost?
+      - Can i call in a phone charge from the room service?
   - intent: rooms_10
     examples: |
       - If I book an Imperial Club Room, what's included?
       - Whats included in the imperial club rooms?
+      - What's included if i book the Imperial Club Room?
+      - What do you provide extra if i book the Imperail Club Room?
+      - I want to boo the Imperial Club Room, what is included in the package?
   - intent: visit_1
     examples: |
       - Do you allow pets in Atlantis Dubai?
       - Pets are allowed?
+      - Can i bring my dog to the hotel?
+      - Are cats allowed in the hotel?
+      - Is there a no pets policy in Atlantis Dubai?
   - intent: visit_2
     examples: |
       - Is there free WiFi at Atlantis Dubai?
       - Free wifi?
+      - Do you provide free internet services in the hotel?
+      - 
   - intent: visit_3
     examples: |
       - What’s the weather in Dubai like?

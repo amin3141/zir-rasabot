@@ -18,11 +18,11 @@ class ActionDefaultFallback(Action):
     """Executes the fallback action and goes back to the previous state
     of the dialogue"""
 
-    customer_id = "1526022105"
-    corpus_id = 40
+    customer_id = "1835841754"
+    corpus_id = 8
     header = {
         "customer-id": customer_id,
-        "x-api-key": "zqt_WvU_2atFHgqYxxT2sQswwIUgogI8K3QeWs0oqA"
+        "x-api-key": "zqt_bWy42jRbsk1Quy9kWZ7grHv_lyxwNBWEklJKRA"
     }
     con = None
 
@@ -67,8 +67,9 @@ class ActionDefaultFallback(Action):
         print(last_resp["score"])
         print(first_resp["score"])
         if last_resp["score"] < 0.3 or first_resp["score"] < 0.3:
+            print(f"Scores; {last_resp['score']} and {first_resp['score']}")
             textQuery.append(
-                "I'm sorry, I don't have any information about that.")
+                f"Scores; {last_resp['score']} and {first_resp['score']} I'm sorry, I don't have any information about that.")
         else:
             textQuery = print_responses(parsed["responseSet"][0], self.cur)
             textQuery.insert(0, "\n")
@@ -99,7 +100,7 @@ def print_responses(response_set, sqlite_cursor):
                 t = result["text"]
                 text_list.append(f"{highlight(fulltext, t)}")
             text_list.append(
-                "*" + f" > \"Jumeirah Hotels & Resorts\" reviewed on {date}" + " *")
+                "*" + f" > \"Atlantis, Dubai\" reviewed on {date}" + " *")
             text_list.append("\n")
             break
     return text_list

@@ -3,11 +3,11 @@
 language: en
 
 pipeline:
-  - name: SpacyNLP
-    model: "en_core_web_md"
-    case_sensitive: False
-  - name: SpacyTokenizer
-  - name: SpacyFeaturizer
+  - name: HFTransformersNLP
+    model_name: "bert"
+  - name: LanguageModelTokenizer
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
@@ -31,8 +31,9 @@ policies:
   # # If you'd like to customize them, uncomment and adjust the policies.
   # # See https://rasa.com/docs/rasa/policies for more information.
   - name: MemoizationPolicy
+    max_history: 1
   - name: RulePolicy
   - name: TEDPolicy
     max_history: 1
-    epochs: 100
+    epochs: 200
     constrain_similarities: true
