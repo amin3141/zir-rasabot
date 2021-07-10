@@ -192,35 +192,52 @@ nlu:
       - Is there free WiFi at Atlantis Dubai?
       - Free wifi?
       - Do you provide free internet services in the hotel?
-      - 
+      - Atlantis Dubai have free wifi service?
+      - do Atlantis Dubai charge for wifi?
   - intent: visit_3
     examples: |
       - What’s the weather in Dubai like?
       - How's the weather nearby?
+      - what's the temprature in dubai?
+      - how cold is there aroud Atlantis Dubai?
+      - what is the normal temprature nearby Atlantis Dubai?
   - intent: visit_4
     examples: |
       - Do you have parking for hotel guests at Atlantis Dubai?
       - parking spots for the hotel?
+      - is there parking available at Atlantis Dubai
+      - how far is parking from Atlantis Dubai?
+      - do Atlantis Dubai own parking spot?
   - intent: visit_5
     examples: |
       - Do you offer parking for non-hotel guests?
+      - Parking for hotel guests?
+      - where to park car at hotel do Atlantis Dubai?
       - Parking for hotel guests?
   - intent: visit_6
     examples: |
       - Do you provide transportation from and to the airport or port?
       - From the airpot and back, do you offer transportation?
+      - is pick and drop facility available for guests at Atlantis Dubai?
+      - do Atlantis Dubai charge for transportation?
   - intent: visit_7
     examples: |
       - How much is a taxi from Dubai Airport to Atlantis?
-      - Taxi cost from the airport?
+      - Taxi cost from the Dubai airport?
+      - Average fare for taxi from airport to Atlantis Dubai?
+      - Cost for taxi from Dubai port to hotel?
   - intent: visit_8
     examples: |
       - How much is a taxi from Abu Dhabi Airport to Atlantis?
-      - Taxi cost form the airport?
+      - Taxi cost form the Abu Dhabi airport?
+      - Average fare for taxi from Abu Dhabi port to Atlantis Dubai?
+      - How much a taxi charge to Atlantis Dubai from Abu Dhabi airport?
   - intent: visit_9
     examples: |
       - Do you offer a free shuttle bus to and from the airport?
       - Shuttle service to and from the airport?
+      - Is there shuttle service available from airport?
+      - shuttle service to and from the airport?
   - intent: visit_10
     examples: |
       - Do you provide free shuttle buses to the malls?
@@ -229,10 +246,15 @@ nlu:
     examples: |
       - What's the dress code during Ramadan?
       - Dress code during Ramadan?
+      - is Ramdan dress code different from normal days?
+      - Ramdan dress code?
   - intent: visit_12
     examples: |
       - Are there any prayer rooms in Atlantis Dubai?
       - Mosque in the hotel?
+      - wher can a guest offer prayer at Atlantis Dubai?
+      - do Atlantis Dubai have imam there to lead prayer?
+      - do Atlantis Dubai own a mosque?
   - intent: visit_13
     examples: |
       - Can I visit Atlantis Dubai if I’m not staying at the hotel?
@@ -553,14 +575,22 @@ nlu:
     examples: |
       - Do you charge for towels?
       - Charges for towel?
+      - Do you charge for towels or they can be borrowed with returnable deposit?
+      - Do you need to take towels to water park?
+      - Do guest staying at the hotels gets provided with towels for the water park?
   - intent: aqua_6
     examples: |
       - Do you provide parking?
       - Parking for the hotel Aquaventure Waterpark?
+      - Do I have to pay for parking if I have a disabled parking placard?
+      - Is there complimentary parking for guests of the hotel?
+      - Is there is an underground car park available?
   - intent: aqua_7
     examples: |
       - Are we allowed to bring our own food and drink?
       - Can we bring our own food?
+      - Is it true that your not allowed to bring your own food into your hotel room?
+      - Whats the policy for bringing your own food and drinks into the hotel?
   - intent: aqua_8
     examples: |
       - What's the minimum age to access the waterpark alone?
@@ -569,34 +599,62 @@ nlu:
     examples: |
       - How long does it take to do all of the rides?
       - How much does it take for it all in Aquaventure Waterpark?
+      - How long can I normally expect a visit to every ride?
+      - How Long It Would Take to go on every ride?
+      - How long will it take to visit the rides and attractions? 
+      - How long does it take to go down the slides?
+      - How many riders can go on at a time?
+      - What rides can I go on if I am Pregnant?
+      - Are there any planned closures at the Water Park?
   - intent: aqua_10
     examples: |
       - If I book tickets to the waterpark, does this include access to The Lost Chambers Aquarium?
       - What's included in the Aquaventure Waterpark ticket?
+      - Does the ticket to water park includes access to all the rides?
+      - Does the ticket to water park includes beverages?
+      - Does the ticket to water park includes locker rentals?
+      - Does the ticket to water park includes towels?
   - intent: aqua_11
     examples: |
       - What's the dress policy?
       - Whats the dress policy for Aquaventure Waterpark?
+      - Dress code for Aquaventure Waterpark?
+      - Waterpark has a swim attire code?
+      - What can I wear in waterpark?
+      - Can I wear my prothesis on when I go to water slides/park?
+      - Do you allow Water Shoes?
   - intent: aqua_12
     examples: |
       - If I bring my nanny, do I need to pay for them too
       - Can i bring a nanny in Aquaventure Waterpark?
+      - Does aduaventure has Babysitting services?
+      - Is it any day care centre or some nani service available in Aquaventure park? 
+      - Can you avail of the Nanny services at aquaventurepark?
   - intent: aqua_13
     examples: |
       - Are we allowed to bring buggies into the waterpark?
       - Can we bring buggies in Aquaventure Waterpark?
+      - Are Strollers/buggy's allowed into the Water Park?
+      - Is designated stroller parking available?
   - intent: aqua_14
     examples: |
       - Do you cater for people with disabilities?
       - disabilities and Aquaventure Waterpark?
+      - Are your rides and attractions ADA accessible?
+      - Do you offer special rates for disabled guests?
+      - Do you provide discount for disabled guests?
+      - Do you cater for wheelchair users and people with disabilities?
   - intent: aqua_15
     examples: |
       - Am I allowed to visit the waterpark if I'm pregnant?
       - pregnency and Aquaventure Waterpark?
+      - Can You Go Down A Water Slide If You're Pregnant?
   - intent: aqua_16
     examples: |
       - Am I allowed to use my camera and selfie stick on the water slides?
       - Can i bring my own camera to Aquaventure Waterpark?
+      - Can I use my mobile phone, action camera or selfie stick at the waterpark?
+      - Can we use a gopro on the water park rides even if we don't have a wrist/body strap?
   - intent: kids_1
     examples: |
       - What is Atlantis Kids Club?
