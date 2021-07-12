@@ -43,6 +43,10 @@ rules:
     steps:
       - intent: booking_6
       - action: utter_booking_6
+  - rule: booking_7
+    steps:
+      - intent: booking_7
+      - action: utter_booking_7
 
   - rule: rooms_1
     steps:
