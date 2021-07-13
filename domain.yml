@@ -6,8 +6,6 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
   - booking_1
   - booking_2
   - booking_3

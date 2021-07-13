@@ -37,25 +37,6 @@ nlu:
       - bye bye
       - see you later
 
-  - intent: affirm
-    examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
-
-  - intent: deny
-    examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
-
   - intent: booking_1
     examples: |
       - Do I need to pay a security deposit at Atlantis Dubai? 
@@ -601,7 +582,7 @@ nlu:
       - How much does it take for it all in Aquaventure Waterpark?
       - How long can I normally expect a visit to every ride?
       - How Long It Would Take to go on every ride?
-      - How long will it take to visit the rides and attractions? 
+      - How long will it take to visit the rides and attractions?
       - How long does it take to go down the slides?
       - How many riders can go on at a time?
       - What rides can I go on if I am Pregnant?
@@ -628,7 +609,7 @@ nlu:
       - If I bring my nanny, do I need to pay for them too
       - Can i bring a nanny in Aquaventure Waterpark?
       - Does aduaventure has Babysitting services?
-      - Is it any day care centre or some nani service available in Aquaventure park? 
+      - Is it any day care centre or some nani service available in Aquaventure park?
       - Can you avail of the Nanny services at aquaventurepark?
   - intent: aqua_13
     examples: |

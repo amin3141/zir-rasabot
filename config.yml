@@ -3,11 +3,11 @@
 language: en
 
 pipeline:
-  - name: HFTransformersNLP
-    model_name: "bert"
-  - name: LanguageModelTokenizer
-  - name: LanguageModelFeaturizer
-    model_name: "bert"
+  - name: SpacyNLP
+    model: "en_core_web_md"
+    case_sensitive: False
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
@@ -21,7 +21,7 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
   - name: FallbackClassifier
-    threshold: 0.4
+    threshold: 0.8
     ambiguity_threshold: 0.1
 
 # Configuration for Rasa Core.

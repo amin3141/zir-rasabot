@@ -64,12 +64,9 @@ class ActionDefaultFallback(Action):
         first_resp = parsed["responseSet"][0]["response"][0]
         last_resp = parsed["responseSet"][0]["response"][-1]
         textQuery = []
-        print(last_resp["score"])
-        print(first_resp["score"])
         if last_resp["score"] < 0.3 or first_resp["score"] < 0.3:
-            print(f"Scores; {last_resp['score']} and {first_resp['score']}")
             textQuery.append(
-                f"Scores; {last_resp['score']} and {first_resp['score']} I'm sorry, I don't have any information about that.")
+                "I'm sorry, I don't have any information about that.")
         else:
             textQuery = print_responses(parsed["responseSet"][0], self.cur)
             textQuery.insert(0, "\n")

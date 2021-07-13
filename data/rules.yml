@@ -173,7 +173,6 @@ rules:
     steps:
       - intent: visit_21
       - action: utter_visit_21
-
   - rule: restaurant_1
     steps:
       - intent: restaurant_1
@@ -294,7 +293,6 @@ rules:
     steps:
       - intent: restaurant_30
       - action: utter_restaurant_30
-
   - rule: dolphin_1
     steps:
       - intent: dolphin_1
@@ -347,7 +345,6 @@ rules:
     steps:
       - intent: dolphin_13
       - action: utter_dolphin_13
-
   - rule: aqua_1
     steps:
       - intent: aqua_1
@@ -412,7 +409,6 @@ rules:
     steps:
       - intent: aqua_16
       - action: utter_aqua_16
-
   - rule: kids_1
     steps:
       - intent: kids_1
@@ -505,7 +501,6 @@ rules:
     steps:
       - intent: kids_23
       - action: utter_kids_23
-
   - rule: spa_1
     steps:
       - intent: spa_1
@@ -514,7 +509,6 @@ rules:
     steps:
       - intent: spa_2
       - action: utter_spa_2
-
   - rule: pool_1
     steps:
       - intent: pool_1
@@ -527,7 +521,6 @@ rules:
     steps:
       - intent: pool_3
       - action: utter_pool_3
-
   - rule: retail_1
     steps:
       - intent: retail_1

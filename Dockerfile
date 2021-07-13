@@ -7,7 +7,7 @@
 # Build:
 #     docker build . -t zir-ai:rasa
 
-FROM rasa/rasa:2.7.1-full
+FROM rasa/rasa:2.7.1-spacy-en
 
 USER root
 
