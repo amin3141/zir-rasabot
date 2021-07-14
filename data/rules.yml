@@ -1,16 +1,547 @@
-# Rules, along with stories are used as training data for the bot and define 
-# how a conversation should always happen provided an intent. 
+# Rules, along with stories are used as training data for the bot and define
+# how a conversation should always happen provided an intent.
 # If in doubt, use stories and do not over-use rules.
 version: "2.0"
 
 rules:
+  - rule: Say Hi
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
-  steps:
-  - intent: nlu_fallback
-  - action: zir_action_fallback
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: zir_action_fallback
+
+  - rule: booking_1
+    steps:
+      - intent: booking_1
+      - action: utter_booking_1
+  - rule: booking_2
+    steps:
+      - intent: booking_2
+      - action: utter_booking_2
+  - rule: booking_3
+    steps:
+      - intent: booking_3
+      - action: utter_booking_3
+  - rule: booking_4
+    steps:
+      - intent: booking_4
+      - action: utter_booking_4
+  - rule: booking_5
+    steps:
+      - intent: booking_5
+      - action: utter_booking_5
+  - rule: booking_6
+    steps:
+      - intent: booking_6
+      - action: utter_booking_6
+  - rule: booking_7
+    steps:
+      - intent: booking_7
+      - action: utter_booking_7
+
+  - rule: rooms_1
+    steps:
+      - intent: rooms_1
+      - action: utter_rooms_1
+  - rule: rooms_2
+    steps:
+      - intent: rooms_2
+      - action: utter_rooms_2
+  - rule: rooms_3
+    steps:
+      - intent: rooms_3
+      - action: utter_rooms_3
+  - rule: rooms_4
+    steps:
+      - intent: rooms_4
+      - action: utter_rooms_4
+  - rule: rooms_5
+    steps:
+      - intent: rooms_5
+      - action: utter_rooms_5
+  - rule: rooms_6
+    steps:
+      - intent: rooms_6
+      - action: utter_rooms_6
+  - rule: rooms_7
+    steps:
+      - intent: rooms_7
+      - action: utter_rooms_7
+  - rule: rooms_8
+    steps:
+      - intent: rooms_8
+      - action: utter_rooms_8
+  - rule: rooms_9
+    steps:
+      - intent: rooms_9
+      - action: utter_rooms_9
+  - rule: rooms_10
+    steps:
+      - intent: rooms_10
+      - action: utter_rooms_10
+
+  - rule: visit_1
+    steps:
+      - intent: visit_1
+      - action: utter_visit_1
+  - rule: visit_2
+    steps:
+      - intent: visit_2
+      - action: utter_visit_2
+  - rule: visit_3
+    steps:
+      - intent: visit_3
+      - action: utter_visit_3
+  - rule: visit_4
+    steps:
+      - intent: visit_4
+      - action: utter_visit_4
+  - rule: visit_5
+    steps:
+      - intent: visit_5
+      - action: utter_visit_5
+  - rule: visit_6
+    steps:
+      - intent: visit_6
+      - action: utter_visit_6
+  - rule: visit_7
+    steps:
+      - intent: visit_7
+      - action: utter_visit_7
+  - rule: visit_8
+    steps:
+      - intent: visit_8
+      - action: utter_visit_8
+  - rule: visit_9
+    steps:
+      - intent: visit_9
+      - action: utter_visit_9
+  - rule: visit_10
+    steps:
+      - intent: visit_10
+      - action: utter_visit_10
+  - rule: visit_11
+    steps:
+      - intent: visit_11
+      - action: utter_visit_11
+  - rule: visit_12
+    steps:
+      - intent: visit_12
+      - action: utter_visit_12
+  - rule: visit_13
+    steps:
+      - intent: visit_13
+      - action: utter_visit_13
+  - rule: visit_14
+    steps:
+      - intent: visit_14
+      - action: utter_visit_14
+  - rule: visit_15
+    steps:
+      - intent: visit_15
+      - action: utter_visit_15
+  - rule: visit_16
+    steps:
+      - intent: visit_16
+      - action: utter_visit_16
+  - rule: visit_17
+    steps:
+      - intent: visit_17
+      - action: utter_visit_17
+  - rule: visit_18
+    steps:
+      - intent: visit_18
+      - action: utter_visit_18
+  - rule: visit_19
+    steps:
+      - intent: visit_19
+      - action: utter_visit_19
+  - rule: visit_20
+    steps:
+      - intent: visit_20
+      - action: utter_visit_20
+  - rule: visit_21
+    steps:
+      - intent: visit_21
+      - action: utter_visit_21
+  - rule: restaurant_1
+    steps:
+      - intent: restaurant_1
+      - action: utter_restaurant_1
+  - rule: restaurant_2
+    steps:
+      - intent: restaurant_2
+      - action: utter_restaurant_2
+  - rule: restaurant_3
+    steps:
+      - intent: restaurant_3
+      - action: utter_restaurant_3
+  - rule: restaurant_4
+    steps:
+      - intent: restaurant_4
+      - action: utter_restaurant_4
+  - rule: restaurant_5
+    steps:
+      - intent: restaurant_5
+      - action: utter_restaurant_5
+  - rule: restaurant_6
+    steps:
+      - intent: restaurant_6
+      - action: utter_restaurant_6
+  - rule: restaurant_7
+    steps:
+      - intent: restaurant_7
+      - action: utter_restaurant_7
+  - rule: restaurant_8
+    steps:
+      - intent: restaurant_8
+      - action: utter_restaurant_8
+  - rule: restaurant_9
+    steps:
+      - intent: restaurant_9
+      - action: utter_restaurant_9
+  - rule: restaurant_10
+    steps:
+      - intent: restaurant_10
+      - action: utter_restaurant_10
+  - rule: restaurant_11
+    steps:
+      - intent: restaurant_11
+      - action: utter_restaurant_11
+  - rule: restaurant_12
+    steps:
+      - intent: restaurant_12
+      - action: utter_restaurant_12
+  - rule: restaurant_13
+    steps:
+      - intent: restaurant_13
+      - action: utter_restaurant_13
+  - rule: restaurant_14
+    steps:
+      - intent: restaurant_14
+      - action: utter_restaurant_14
+  - rule: restaurant_15
+    steps:
+      - intent: restaurant_15
+      - action: utter_restaurant_15
+  - rule: restaurant_16
+    steps:
+      - intent: restaurant_16
+      - action: utter_restaurant_16
+  - rule: restaurant_17
+    steps:
+      - intent: restaurant_17
+      - action: utter_restaurant_17
+  - rule: restaurant_18
+    steps:
+      - intent: restaurant_18
+      - action: utter_restaurant_18
+  - rule: restaurant_19
+    steps:
+      - intent: restaurant_19
+      - action: utter_restaurant_19
+  - rule: restaurant_20
+    steps:
+      - intent: restaurant_20
+      - action: utter_restaurant_20
+  - rule: restaurant_21
+    steps:
+      - intent: restaurant_21
+      - action: utter_restaurant_21
+  - rule: restaurant_22
+    steps:
+      - intent: restaurant_22
+      - action: utter_restaurant_22
+  - rule: restaurant_23
+    steps:
+      - intent: restaurant_23
+      - action: utter_restaurant_23
+  - rule: restaurant_24
+    steps:
+      - intent: restaurant_24
+      - action: utter_restaurant_24
+  - rule: restaurant_25
+    steps:
+      - intent: restaurant_25
+      - action: utter_restaurant_25
+  - rule: restaurant_26
+    steps:
+      - intent: restaurant_26
+      - action: utter_restaurant_26
+  - rule: restaurant_27
+    steps:
+      - intent: restaurant_27
+      - action: utter_restaurant_27
+  - rule: restaurant_28
+    steps:
+      - intent: restaurant_28
+      - action: utter_restaurant_28
+  - rule: restaurant_29
+    steps:
+      - intent: restaurant_29
+      - action: utter_restaurant_29
+  - rule: restaurant_30
+    steps:
+      - intent: restaurant_30
+      - action: utter_restaurant_30
+  - rule: dolphin_1
+    steps:
+      - intent: dolphin_1
+      - action: utter_dolphin_1
+  - rule: dolphin_2
+    steps:
+      - intent: dolphin_2
+      - action: utter_dolphin_2
+  - rule: dolphin_3
+    steps:
+      - intent: dolphin_3
+      - action: utter_dolphin_3
+  - rule: dolphin_4
+    steps:
+      - intent: dolphin_4
+      - action: utter_dolphin_4
+  - rule: dolphin_5
+    steps:
+      - intent: dolphin_5
+      - action: utter_dolphin_5
+  - rule: dolphin_6
+    steps:
+      - intent: dolphin_6
+      - action: utter_dolphin_6
+  - rule: dolphin_7
+    steps:
+      - intent: dolphin_7
+      - action: utter_dolphin_7
+  - rule: dolphin_8
+    steps:
+      - intent: dolphin_8
+      - action: utter_dolphin_8
+  - rule: dolphin_9
+    steps:
+      - intent: dolphin_9
+      - action: utter_dolphin_9
+  - rule: dolphin_10
+    steps:
+      - intent: dolphin_10
+      - action: utter_dolphin_10
+  - rule: dolphin_11
+    steps:
+      - intent: dolphin_11
+      - action: utter_dolphin_11
+  - rule: dolphin_12
+    steps:
+      - intent: dolphin_12
+      - action: utter_dolphin_12
+  - rule: dolphin_13
+    steps:
+      - intent: dolphin_13
+      - action: utter_dolphin_13
+  - rule: aqua_1
+    steps:
+      - intent: aqua_1
+      - action: utter_aqua_1
+  - rule: aqua_2
+    steps:
+      - intent: aqua_2
+      - action: utter_aqua_2
+  - rule: aqua_3
+    steps:
+      - intent: aqua_3
+      - action: utter_aqua_3
+  - rule: aqua_4
+    steps:
+      - intent: aqua_4
+      - action: utter_aqua_4
+  - rule: aqua_5
+    steps:
+      - intent: aqua_5
+      - action: utter_aqua_5
+  - rule: aqua_6
+    steps:
+      - intent: aqua_6
+      - action: utter_aqua_6
+  - rule: aqua_7
+    steps:
+      - intent: aqua_7
+      - action: utter_aqua_7
+  - rule: aqua_8
+    steps:
+      - intent: aqua_8
+      - action: utter_aqua_8
+  - rule: aqua_9
+    steps:
+      - intent: aqua_9
+      - action: utter_aqua_9
+  - rule: aqua_10
+    steps:
+      - intent: aqua_10
+      - action: utter_aqua_10
+  - rule: aqua_11
+    steps:
+      - intent: aqua_11
+      - action: utter_aqua_11
+  - rule: aqua_12
+    steps:
+      - intent: aqua_12
+      - action: utter_aqua_12
+  - rule: aqua_13
+    steps:
+      - intent: aqua_13
+      - action: utter_aqua_13
+  - rule: aqua_14
+    steps:
+      - intent: aqua_14
+      - action: utter_aqua_14
+  - rule: aqua_15
+    steps:
+      - intent: aqua_15
+      - action: utter_aqua_15
+  - rule: aqua_16
+    steps:
+      - intent: aqua_16
+      - action: utter_aqua_16
+  - rule: kids_1
+    steps:
+      - intent: kids_1
+      - action: utter_kids_1
+  - rule: kids_2
+    steps:
+      - intent: kids_2
+      - action: utter_kids_2
+  - rule: kids_3
+    steps:
+      - intent: kids_3
+      - action: utter_kids_3
+  - rule: kids_4
+    steps:
+      - intent: kids_4
+      - action: utter_kids_4
+  - rule: kids_5
+    steps:
+      - intent: kids_5
+      - action: utter_kids_5
+  - rule: kids_6
+    steps:
+      - intent: kids_6
+      - action: utter_kids_6
+  - rule: kids_7
+    steps:
+      - intent: kids_7
+      - action: utter_kids_7
+  - rule: kids_8
+    steps:
+      - intent: kids_8
+      - action: utter_kids_8
+  - rule: kids_9
+    steps:
+      - intent: kids_9
+      - action: utter_kids_9
+  - rule: kids_10
+    steps:
+      - intent: kids_10
+      - action: utter_kids_10
+  - rule: kids_11
+    steps:
+      - intent: kids_11
+      - action: utter_kids_11
+  - rule: kids_12
+    steps:
+      - intent: kids_12
+      - action: utter_kids_12
+  - rule: kids_13
+    steps:
+      - intent: kids_13
+      - action: utter_kids_13
+  - rule: kids_14
+    steps:
+      - intent: kids_14
+      - action: utter_kids_14
+  - rule: kids_15
+    steps:
+      - intent: kids_15
+      - action: utter_kids_15
+  - rule: kids_16
+    steps:
+      - intent: kids_16
+      - action: utter_kids_16
+  - rule: kids_17
+    steps:
+      - intent: kids_17
+      - action: utter_kids_17
+  - rule: kids_18
+    steps:
+      - intent: kids_18
+      - action: utter_kids_18
+  - rule: kids_19
+    steps:
+      - intent: kids_19
+      - action: utter_kids_19
+  - rule: kids_20
+    steps:
+      - intent: kids_20
+      - action: utter_kids_20
+  - rule: kids_21
+    steps:
+      - intent: kids_21
+      - action: utter_kids_21
+  - rule: kids_22
+    steps:
+      - intent: kids_22
+      - action: utter_kids_22
+  - rule: kids_23
+    steps:
+      - intent: kids_23
+      - action: utter_kids_23
+  - rule: spa_1
+    steps:
+      - intent: spa_1
+      - action: utter_spa_1
+  - rule: spa_2
+    steps:
+      - intent: spa_2
+      - action: utter_spa_2
+  - rule: pool_1
+    steps:
+      - intent: pool_1
+      - action: utter_pool_1
+  - rule: pool_2
+    steps:
+      - intent: pool_2
+      - action: utter_pool_2
+  - rule: pool_3
+    steps:
+      - intent: pool_3
+      - action: utter_pool_3
+  - rule: retail_1
+    steps:
+      - intent: retail_1
+      - action: utter_retail_1
+  - rule: retail_2
+    steps:
+      - intent: retail_2
+      - action: utter_retail_2
+  - rule: retail_3
+    steps:
+      - intent: retail_3
+      - action: utter_retail_3
+  - rule: retail_4
+    steps:
+      - intent: retail_4
+      - action: utter_retail_4
+  - rule: retail_5
+    steps:
+      - intent: retail_5
+      - action: utter_retail_5
+  - rule: retail_6
+    steps:
+      - intent: retail_6
+      - action: utter_retail_6

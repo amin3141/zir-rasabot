@@ -4,6 +4,8 @@ language: en
 
 pipeline:
   - name: SpacyNLP
+    model: "en_core_web_md"
+    case_sensitive: False
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
   - name: RegexFeaturizer
@@ -19,9 +21,19 @@ pipeline:
   - name: ResponseSelector
     epochs: 100
   - name: FallbackClassifier
-    threshold: 0.6
+    threshold: 0.8
     ambiguity_threshold: 0.1
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
 policies:
+  # # No configuration for policies was provided. The following default policies were used to train your model.
+  # # If you'd like to customize them, uncomment and adjust the policies.
+  # # See https://rasa.com/docs/rasa/policies for more information.
+  - name: MemoizationPolicy
+    max_history: 1
+  - name: RulePolicy
+  - name: TEDPolicy
+    max_history: 1
+    epochs: 200
+    constrain_similarities: true

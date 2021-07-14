@@ -19,10 +19,10 @@ class ActionDefaultFallback(Action):
     of the dialogue"""
 
     customer_id = "1526022105"
-    corpus_id = 40
+    corpus_id = 64
     header = {
         "customer-id": customer_id,
-        "x-api-key": "zqt_WvU_2atFHgqYxxT2sQswwIUgogI8K3QeWs0oqA"
+        "x-api-key": "zqt_WvU_2ZweWSRlgL9671UWkbvrVWxOjhJpT07dPw"
     }
     con = None
 
@@ -64,8 +64,6 @@ class ActionDefaultFallback(Action):
         first_resp = parsed["responseSet"][0]["response"][0]
         last_resp = parsed["responseSet"][0]["response"][-1]
         textQuery = []
-        print(last_resp["score"])
-        print(first_resp["score"])
         if last_resp["score"] < 0.3 or first_resp["score"] < 0.3:
             textQuery.append(
                 "I'm sorry, I don't have any information about that.")
@@ -99,7 +97,7 @@ def print_responses(response_set, sqlite_cursor):
                 t = result["text"]
                 text_list.append(f"{highlight(fulltext, t)}")
             text_list.append(
-                "*" + f" > \"Jumeirah Hotels & Resorts\" reviewed on {date}" + " *")
+                "*" + f" > \"Atlantis, Dubai\" reviewed on {date}" + " *")
             text_list.append("\n")
             break
     return text_list

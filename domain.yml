@@ -1,4 +1,4 @@
-# This file binds the different aspects of your bot together. 
+# This file binds the different aspects of your bot together.
 # Stories, intents, actions etc. are all declared here to be used.
 # To learn more https://rasa.com/docs/rasa/domain/
 version: "2.0"
@@ -6,45 +6,424 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - jumeirah_living
-  - jumeirah_one
-  - lost_and_found
-  - jumeirah
-  - reservations
+  - booking_1
+  - booking_2
+  - booking_3
+  - booking_4
+  - booking_5
+  - booking_6
+  - booking_7
+  - rooms_1
+  - rooms_2
+  - rooms_3
+  - rooms_4
+  - rooms_5
+  - rooms_6
+  - rooms_7
+  - rooms_8
+  - rooms_9
+  - rooms_10
+  - visit_1
+  - visit_2
+  - visit_3
+  - visit_4
+  - visit_5
+  - visit_6
+  - visit_7
+  - visit_8
+  - visit_9
+  - visit_10
+  - visit_11
+  - visit_12
+  - visit_13
+  - visit_14
+  - visit_15
+  - visit_16
+  - visit_17
+  - visit_18
+  - visit_19
+  - visit_20
+  - visit_21
+  - restaurant_1
+  - restaurant_2
+  - restaurant_3
+  - restaurant_4
+  - restaurant_5
+  - restaurant_6
+  - restaurant_7
+  - restaurant_8
+  - restaurant_9
+  - restaurant_10
+  - restaurant_11
+  - restaurant_12
+  - restaurant_13
+  - restaurant_14
+  - restaurant_15
+  - restaurant_16
+  - restaurant_17
+  - restaurant_18
+  - restaurant_19
+  - restaurant_20
+  - restaurant_21
+  - restaurant_22
+  - restaurant_23
+  - restaurant_24
+  - restaurant_25
+  - restaurant_26
+  - restaurant_27
+  - restaurant_28
+  - restaurant_29
+  - restaurant_30
+  - dolphin_1
+  - dolphin_2
+  - dolphin_3
+  - dolphin_4
+  - dolphin_5
+  - dolphin_6
+  - dolphin_7
+  - dolphin_8
+  - dolphin_9
+  - dolphin_10
+  - dolphin_11
+  - dolphin_12
+  - dolphin_13
+  - aqua_1
+  - aqua_2
+  - aqua_3
+  - aqua_4
+  - aqua_5
+  - aqua_6
+  - aqua_7
+  - aqua_8
+  - aqua_9
+  - aqua_10
+  - aqua_11
+  - aqua_12
+  - aqua_13
+  - aqua_14
+  - aqua_15
+  - aqua_16
+  - kids_1
+  - kids_2
+  - kids_3
+  - kids_4
+  - kids_5
+  - kids_6
+  - kids_7
+  - kids_8
+  - kids_9
+  - kids_10
+  - kids_11
+  - kids_12
+  - kids_13
+  - kids_14
+  - kids_15
+  - kids_16
+  - kids_17
+  - kids_18
+  - kids_19
+  - kids_20
+  - kids_21
+  - kids_22
+  - kids_23
+  - spa_1
+  - spa_2
+  - pool_1
+  - pool_2
+  - pool_3
+  - retail_1
+  - retail_2
+  - retail_3
+  - retail_4
+  - retail_5
+  - retail_6
 
 responses:
   utter_please_rephrase:
-  - text: Sorry I didn't get that. Can you rephrase?
-    
+    - text: Sorry I didn't get that. Can you rephrase?
+
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
-    
-  utter_reservation:
-  - text: "Please go to 'Check Rates & Book Now' section of the hotel you have a reservation for. You will find and an area called 'Cancellations and Amendments'. For all other amendments and cancellations, email or call our Reservations Office."
+    - text: "Bye"
 
-  utter_jum_liv:
-  - text: "Jumeirah Living is our luxury brand of residences and serviced apartments. Whether for short, mid-term or extended stays, Jumeirah Living will offer innovative yet personal lifestyle experiences unique to each guest, resident and owner, with a strong emphasis on effortless living."
+  utter_booking_1:
+    - text: "A deposit of AED 500 per night is required at check-in for guests who would like to charge purchases and incidentals to their room."
 
-  utter_jum_one:
-  - text: "Jumeirah One is Jumeirah’s loyalty programme designed to recognise and reward loyal guests of Jumeirah. Guests can enjoy more of life’s pleasures with privileged access to an exclusive global lifestyle."
-    
-  utter_lost_found:
-  - text: "Should any guests lose personal belongings whilst staying at a Jumeirah Hotel or Resort in Dubai, if recovered, the item will be recorded as 'found' by that particular property. Each property keeps detailed records of all 'found' items and will store these for a maximum of three months. After this period, in line with the directives of the General Department of Criminal Investigation in Dubai, all unclaimed items will be handed over to the nearest Police Station. These 'found' items will then be kept at the police warehouse for a further three months after which they will be auctioned, and any funds raised given to charity.Should hotel guests need to locate any item after the initial three month period expires, they are requested to contact the hotel who will assist in coordinating with the police station where the found items are handed over. The police will then advise the necessary procedures to locate any item."
-      
-  utter_jum:
-  - text: "Jumeirah is a world-class international hotel and hospitality company which currently manages hotels in  Abu Dhabi, Bahrain, Dubai, Frankfurt, Kuwait, London, Maldives, Mallorca and Shanghai. Please view our Portfolio for more information."
-    
+  utter_booking_2:
+    - text: "Guest must be 18 years of age or older to book a room at Atlantis Dubai."
+
+  utter_booking_3:
+    - text: "Check-in time is 3:00pm and check-out time is 12:00pm."
+
+  utter_booking_4:
+    - text: "The early check-in request can be made at the time of booking. However, it is strictly subject to availability and may incur an additional charge."
+
+  utter_booking_5:
+    - text: "Yes, once you have checked in, the Front Office Reception will assist with luggage storage and provide a temporary identification card to access the beach, pool, Aquaventure and The Lost Chambers Aquarium, from as early as 10:00am."
+
+  utter_booking_6:
+    - text: "The Half Board Package includes your hotel stay plus daily breakfast and dinner. Some restaurants included in the Half Board Package for dinner require a further supplement to be paid per person. There are few restaurants that are not included in Half Board."
+
+  utter_booking_7:
+    - text: "No, we only offer Bed and Breakfast, and Half Board Packages."
+
+  utter_rooms_1:
+    - text: "We have separate smoking floors at Atlantis Dubai. The smoking rooms can be requested in advance, however, rooms are strictly subject to availability."
+  utter_rooms_2:
+    - text: "We have rooms with provisions and amenities for people with disabilities. At the time of booking rooms, the details must be shared for more specifications and to check availability. Available amenities and provisions include wheelchairs (requires a deposit of AED 1000), shower stools, toilet frames and physically challenged phones. These items are strictly subject to availability."
+  utter_rooms_3:
+    - text: "We offer complimentary coffee sachets, tea bags, sugar, milk sachets and water kettles in all rooms."
+  utter_rooms_4:
+    - text: "Yes, an iron and ironing board are provided in all the rooms at Atlantis Dubai."
+  utter_rooms_5:
+    - text: "Refrigerators are subject to availability. They can be requested at the time of your booking, or during your stay by dialing “0” for assistance."
+  utter_rooms_6:
+    - text: "Microwaves are subject to availability. They can be requested at the time of your booking, or during your stay by dialing “0” for assistance."
+  utter_rooms_7:
+    - text: "Roll-away/ sofa beds are subject to availability. They can be requested at the time of your booking, or during your stay by dialing “0” for assistance."
+  utter_rooms_8:
+    - text: "Yes, we can provide international adaptors upon request, subject to availability. Please dial 0 to place your request."
+  utter_rooms_9:
+    - text: "Yes, we have a charging facility at the Business Centre, which is open daily from 8:00am – 8:00pm."
+  utter_rooms_10:
+    - text: "A private check-in and check-out desk in the Imperial Club Lounge for comfort and ease. Dedicated Imperial Club Concierge team. Continental Breakfast from 7am – 11am.  Daily afternoon tea from 3pm – 4pm. Inclusive of a bites such as scones, quiches and pastries, a selection of tea and beverages. There’s even milkshakes, sandwiches, and sweet treats for the little ones. Daily sunset happy hour from 5pm – 7pm. Selection of complimentary beers and wines, fruity cocktails or mocktails, perfectly complemented by elegant canapés to enjoy. Happy hour can also be enjoyed on the Imperial Club Beach. Complimentary Kids Club and The Zone morning or afternoon sessions. AED 50 credit gaming card at Wavehouse once per stay. Exclusive access to Imperial Club beach with a fully-serviced bar and personal service attendants. Complimentary 30 minutes added to any 60 minute ShuiQi Spa treatment booked. Unlimited access to the wet facility areas at the ShuiQi Spa."
+  utter_visit_1:
+    - text: "We do not allow pets in the hotel or resort grounds."
+  utter_visit_2:
+    - text: "Yes, in-house guests receive complimentary WiFi and non-residents can access complimentary WiFi by registering an account."
+  utter_visit_3:
+    - text: "Dubai has a tropical desert climate, with mild winters (December – February) and warm spring and autumn days, with balmy days and very little rain. Summers (June – August) are extremely hot and humid, with an average high of around 41°C (106°F) and overnight lows around 30°C (86°F). The highest recorded temperature in Dubai is 52.1°C (126°F) in July 2002."
+  utter_visit_4:
+    - text: "Yes, we offer complimentary valet parking for guests staying at the hotel."
+  utter_visit_5:
+    - text: "Guests visiting the hotel for the day can use the complimentary valet parking services upon spending and presenting a bill of AED 150 or above on hotel services. We also offer complimentary parking for day visitors at the P18 parking area. When driving up the Palm towards Atlantis, please take a first right at the roundabout before you reach the Atlantis, The Palm building. A shuttle bus will pick our guests from the branded bus hop-on/ hop-off area and drop them off at The Avenues entrance."
+  utter_visit_6:
+    - text: "We provide complimentary pick up and drop off for all Suite guests from and to Dubai International Airport. Guests staying in a Guest Room may book a pick up and drop off for an additional fee, subject to availability. Please email: reservations@atlantisthepalm.com or call +971 (04) 4261000."
+  utter_visit_7:
+    - text: "A taxi from Dubai International Airport to Atlantis Dubai takes about 40 – 60 minutes and costs approximately AED 120."
+  utter_visit_8:
+    - text: "A taxi from Abu Dhabi International Airport to Atlantis Dubai takes about 1 hour 20 minutes and costs approximately AED 200–300."
+  utter_visit_9:
+    - text: "Atlantis Transportation Services are available for a fee, subject to availability. To arrange transfers, please email: reservations@atlantisthepalm.com or call +971 (04) 4261000."
+  utter_visit_10:
+    - text: "Yes, we provide a complimentary shuttle service to the Mall of the Emirates. A copy of the shuttle schedule can be requested at the Concierge desk."
+  utter_visit_11:
+    - text: "The dress code during the Holy Month of Ramadan depends on which restaurants you are dining in, however it is recommended to dress conservatively during this time."
+  utter_visit_12:
+    - text: "We have two prayer rooms: one in the East Tower in The Avenues and one in the West Tower near ShuiQi Spa."
+  utter_visit_13:
+    - text: "Visitors are welcome to dine at our restaurants, book spa and salon services and ShuiQi Spa, visit Aquaventure Waterpark and The Lost Chambers Aquarium, and book diving, dolphin and sea lion interactions. For day visitors who would like to visit an in-house guest, the in-house guest must register them at the main reception prior to the visit. Day visitors must be able to provide the in-house guest’s room number and full name to be let through by security. They are also required to present valid identification at the main reception. Lastly, in-house guest must collect the day visitors from the lobby and personally lead them up to their room."
+  utter_visit_14:
+    - text: "Our guest clinic is open from 9:00am – 10:00pm daily and have paramedic assistance available 24/7. The Marina Pharmacy is located in the West Tower, near ShuiQi Spa."
+  utter_visit_15:
+    - text: "Yes, we provide complimentary towels for all hotel guests. Towels can be collected from the cabanas at the pool, beach and Aquaventure Waterpark."
+  utter_visit_16:
+    - text: "Guests may either settle their bill a night before they check out or go directly to the front office by 12.00pm finalise their account. We also have an Express Check-Out option, which can be found in Atlantean booklet in your room. Guests are required to sign the form and pass by the reception to drop it at the Express Check-Out counter."
+  utter_visit_17:
+    - text: "You can request a late check-out at the time of booking, or request it on the day, however, it is strictly subject to availability and will incur an additional charge. Guest Rooms – AED 130 per hour per room Imperial Club Rooms and Suites – AED 190 per hour per room, including access to the Imperial Club Lounge From 9:00pm onwards, you will be charged for full day. You will need to approach the front desk and request a new key."
+  utter_visit_18:
+    - text: "Yes, there are many facilities that can be used on the day you check out. All guests are welcome to access Aquaventure Waterpark and The Lost Chambers Aquarium after 12:00pm. A pass is given at the Front Office at the time of check out. We also have the changing and shower facilities at the Aquaventure Waterpark from 10.00am until sunset. Guests with Imperial Club access may use the shower and changing facilities in the Imperial Club Hospitality Lounge after their check out on the same day."
+  utter_visit_19:
+    - text: "Simply dial “0” from your room to contact Guest Services and share your feedback during your stay. After your stay, a survey email will be sent to email address provided. Guests can also send their feedback by emailing dxb-feedback@atlantisthepalm.com."
+  utter_visit_20:
+    - text: "A copy of your room bill will be provided during check out. To request a copy of the bill after your departure, email dxb-callcenter@atlantisthepalm.com."
+  utter_visit_21:
+    - text: "Our Lost and Found desk is available 24/7 to assist. During your stay, you may dial '0' from your room; after your departure call +971 44260000 or email dxb-callcenter@atlantisthepalm.com."
+  utter_restaurant_1:
+    - text: "We have a range of family-friendly restaurants at Atlantis Dubai, including Gordon Ramsay’s Bread Street Kitchen and Bar, Ronda Locatelli for Italian cuisine, and our buffet restaurants Saffron and Kaleidoscope."
+  utter_restaurant_2:
+    - text: "For a romantic dining experience at Atlantis Dubai, we suggest award-winning Ossiano, with views of the Ambassador Lagoon, Nobu for Japanese-Peruvian cuisine in a sleek setting, Hakkasan for contemporary Cantonese, or Ayamna for an authentic Lebanese meal."
+  utter_restaurant_3:
+    - text: "Atlantis Dubai offers a range of brunches every Friday, including Dubai’s biggest party brunch at Saffron, an elegant Japanese brunch at Nobu, a dynamic Cantonese brunch at Hakkasan and a family-friendly brunch at Gordon Ramsay’s Bread Street Kitchen and Bar. "
+  utter_restaurant_4:
+    - text: "Most of the restaurants at Atlantis Dubai are open to guests of all ages, but please note the following age policies apply.Nobu, Seafire and Hakkasan: Family seating is available for children aged 4 years and above at 6:00pm and 6:30pm only (excluding Fridays at Nobu). After 7:00pm, children aged 10 and above are welcome. Ossiano: For dinner, children aged 11 years and above are welcome. All ages are welcome at Saturday lunch. Saffron Brunch: 21 years and above only. ID is required upon entry."
+  utter_restaurant_5:
+    - text: "The Half Board Package includes breakfast and dinner daily (excluding brunches and Aquaventure restaurants). Guests have a choice of a starter, main course and dessert from the a la carte menu, with the exception of signature dishes in the following restaurants. Restaurants and supplementary charges are subject to change without notice. "
+  utter_restaurant_6:
+    - text: "Smoking is not permitted inside the restaurants at Atlantis Dubai, however, guests are allowed to smoke at the bar at Wavehouse and in the designated areas on the restaurant terraces."
+  utter_restaurant_7:
+    - text: "The indoor dining areas of all restaurants at Atlantis Dubai are smoke-free zones."
+  utter_restaurant_8:
+    - text: "For your comfort, please note the following dress codes for restaurants at Atlantis Dubai. Hakkasan, Seafire, Bread Street Kitchen and Ayamna  Smart Casual dress code, with a minimum of tailored shorts, shirts with sleeves, closed shoes or sandals. Flip flops are not allowed. UAE national dress is welcome. Kaleidoscope, Saffron, Ronda Locatelli and Plato’s Casual dress code, with a minimum of tailored shorts, shirt with sleeves and any footwear is allowed. UAE national dress is welcome. The Edge and The Shore Casual dress code, with a minimum of shorts, shirts and any footwear allowed. UAE national dress is welcome. No swimwear or towels allowed in the evening. Food outlets in The Avenues Casual dress code, with a minimum of shorts, shirts and any footwear allowed. UAE national dress is welcome. No swimwear or towels allowed. Nobu  Smart casual dress code is recommended. Gentlemen are requested to wear long trousers or smart jeans. Minimum of shirts with sleeves, closed shoes or sandals. Flip flops are not allowed. UAE national dress is welcome. Ossiano  Smart Elegant dress code is recommended. Gentlemen are requested to wear shirts with a collar, long trousers or smart jeans and closed shoes (no trainers).  UAE national dress is welcome. The same dress code applies to eligible children dining in the restaurant."
+  utter_restaurant_9:
+    - text: "The following restaurants offer live entertainment. Kindly note that during the Holy Month of Ramadan, there is no live entertainment. The scheduled timing of the entertainment is subject to change without prior notice. Ayamna: Musicians entertain you with traditional Arabic performances, Wed – Fri, from 8:00pm. Ossiano: Enjoy a live vocal performance every evening from 8pm. Seafire: Sway the night away to the jazz numbers and swing tunes of The Swing Revue band. Monday, from 8:00pm."
+  utter_restaurant_10:
+    - text: "A cancellation policy will only be applied for group booking and it varies depending of the restaurant."
+  utter_restaurant_11:
+    - text: "The minimum age for drinking alcohol at Atlantis Dubai is 21 years of age."
+  utter_restaurant_12:
+    - text: "We offer Afternoon Tea at Plato’s daily, 2:00pm to 5:30pm.Packages:* Bronze: AED 150 per person including unlimited tea or coffee Silver: AED 299 per person including Bottomless Prosecco for 1.5 hours Gold: AED 940 per couple including a bottle of house Champagne (Perrier-Jouët Grand Brut) Blue: AED 200 per person including a signature cocktail For reservations, contact us at +971 4 426 1166 or  restaurantreservations@atlantisthepalm.com *Terms and conditions: Silver: Offer is valid for 1.5 hours Gold: Offer is valid for one or two people only, or multiples of two. Blue: The signature cocktail includes Mandarin Vodka, blood orange, rooibos and vanilla tea, top up with date wine."
+  utter_restaurant_13:
+    - text: "Minimum spend may apply in group bookings in the restaurants. Bars and restaurant bar serve on a first come first service basis and no minimum spend applicable. "
+  utter_restaurant_14:
+    - text: "Book online at atlantis.com/dubai.com/restaurants or contact us on +971 4 426 1166 or restaurantreservations@atlantisthepalm.com"
+  utter_restaurant_15:
+    - text: "You can view our menus online at atlantis.com/dubai/restaurants. You can also contact us at +971 4 426 1166 or send an email to restaurantreservations@atlantisthepalm.com"
+  utter_restaurant_16:
+    - text: "We have 23 restaurants, including 3 celebrity chef restaurants. Celebrity Restaurants Nobu, Ronda Locatelli and Bread Street Kitchen Signature Restaurants Hakkasan, Ossiano, Ayamna, Seafire Steakhouse, Kaleidoscope and Saffron and Wavehouse Casual Restaurants Plato’s, Poseidon Cafe, The Edge, The Shore, Asia Republic, Shawafel and TBJ."
+  utter_restaurant_17:
+    - text: "Atlantis caters our guest's dietary requirements including vegetarian. The below restaurants offer the widest variety of vegetarian options: Nobu Ronda Locatelli Ayamna Kaleidoscope"
+  utter_restaurant_18:
+    - text: "Our restaurant cater to lactose intolerance. We recommend making a reservation and informing the restaurant of your dietary requirement beforehand."
+  utter_restaurant_19:
+    - text: "Our restaurant cater to vegans, and all offer vegan options. Ronda Locatelli has a specialist vegan menu offering 40 vegan dishes."
+  utter_restaurant_20:
+    - text: "Our restaurants cater to gluten intolerance. We recommend making a reservation and informing the restaurant of your dietary requirement beforehand."
+  utter_restaurant_21:
+    - text: "We offer a complimentary cake/dessert with a message of your choice in certain restaurants with at least 24 hours’ notice."
+  utter_restaurant_22:
+    - text: "If you wish to arrange something special such as flowers, a special cake and pre-ordered beverages at any restaurant, please contact us at +971 4 426 1166 or restaurantreservations@atlantisthepalm.com"
+  utter_restaurant_23:
+    - text: "We offer catering in our resort’s meeting rooms and event spaces, as well as catering services for external events. "
+  utter_restaurant_24:
+    - text: "Casual restaurants such as Poseidon Cafe, The Burger Joint, Asia Republic, TBJ and Shawafel all offer a takeaway service. Ronda Locatelli, Asia Republic, TBJ and Shawafel are available for delivery on UberEats."
+  utter_restaurant_25:
+    - text: "Please note the following general guidelines during Ramadan. Restaurants and Aquaventure are usually not affected during Ramadan In room dining will be available at all times There is no entertainment during Ramadan such as live performance."
+  utter_restaurant_26:
+    - text: "Please be informed that Bars do not allow guest under 21 years old.  Children accompanied with adults are welcome in Plato’s."
+  utter_restaurant_27:
+    - text: "We hold an existing reservation for 15 minutes. If you will be late, please call us on +971 4 426 1166 to amend your reservation as per our availability. Please contact us at +971 4 426 1166 or restaurantreservations@atlantisthepalm.com."
+  utter_restaurant_28:
+    - text: "Guests who booked under our Half Board package are most welcome to dine in the restaurants not included in the package on a fully chargeable basis."
+  utter_restaurant_29:
+    - text: "Wavehouse 50% off selected drinks, daily 5:00pm – 7:00pm The Shore 50% off selected drinks, daily 5:00pm – 7:00pm Nobu 50% off selected drinks, daily 6:00pm – 8:00pm"
+  utter_restaurant_30:
+    - text: "Wavehouse Ladies get three free drinks, a Surf’s Up Wave Rider pass, 50% off bowling and a AED 100 voucher. Tuesday, 7:00pm – 11:00pm. Nobu Ladies get three free drinks and a special happy hour menu. Monday, 8:30pm – 11:00pm"
+  utter_dolphin_1:
+    - text: "The price depends on the type of experience and seasonality. Please contact us on +971 4 426 0000 or dxb-info@atlantisdubai.com to get detailed information. Online bookings can also be done through our website."
+  utter_dolphin_2:
+    - text: "All children under 12 years old must be accompanied by a participating, paying adult. For the Dolphin Meet & Greet and Dolphin Encounter there is no age limit and children 2 years old and below have complimentary access. For the Swim & Explore, participants must be a minimum of 8 years old and be confident swimmers and able to tread water. For the Dolphin Trek, participants must be a minimum of 8 years old and they do not need to be certified divers in order to participate in the experience."
+  utter_dolphin_3:
+    - text: "Yes, we offer preferential rates for all guests staying with us."
+  utter_dolphin_4:
+    - text: "Photos are available at an additional charge, the only experiences providing a complimentary photo is Dolphin Meet & Greet and Sea Lion Meet & Greet."
+  utter_dolphin_5:
+    - text: "The price includes an experience programme with our dolphins, same-day access to Aquaventure Waterpark, a locker for the duration of the experience, towels, juices after the experience and 25% off dame-day admission to The Lost Chambers Aquarium."
+  utter_dolphin_6:
+    - text: "For the Swim & Explore, participants must be confident swimmers and able to tread water. We offer Dolphin Meet & Greet and Dolphin Encounter for non-swimmers."
+  utter_dolphin_7:
+    - text: "The hotel pool and beaches are exclusively for hotel guests."
+  utter_dolphin_8:
+    - text: "The price depends on the type of experience and seasonality. Please contact us on +971 4 426 0000 or dxb-info@atlantisdubai.com to get detailed information. Online bookings can also be done through our website."
+  utter_dolphin_9:
+    - text: "All children under 12 years old must be accompanied by a participating and paying adult. Sea Lion Discovery is available for children 6 years old and above at a minimum height of at least 1.20m. Sea Lion Meet & Greet is available for all ages and children 2 years old and below have complimentary access."
+  utter_dolphin_10:
+    - text: "If you are arriving by car, please park your vehicle at Aquaventure Waterpark parking (turn right at first roundabout after exiting the tunnel leading to Atlantis Dubai). A shuttle will take you to the Aquaventure and Dolphin Bay Ticketing Plaza."
+  utter_dolphin_11:
+    - text: "Dolphin Bay & Sea Lion Point will make every effort to provide the necessary assistance for persons with special needs and/or physical impairment so that they can enjoy the experience, however under the EHS Marine Mammal Regulations of 2008 it is required that a primary attendant be present in the water throughout the experience."
+  utter_dolphin_12:
+    - text: "If you are pregnant and are interested in experiencing a dolphin or sea lion programme, please consult your physician. Please inform the Reservation Agents at extension 61030 once you are at Atlantis, The Palm of any medical conditions that could affect your participation."
+  utter_dolphin_13:
+    - text: "Cameras, jewellery, hair accessories or any loose accessory are not allowed in the water for the safety of our animals. You can purchase photos taken by our professional photographer. Observes with an Observer Pass can take photos for you."
+  utter_aqua_1:
+    - text: "Prices of tickets bought at Aquaventure Waterpark counter vary depending on the season. Prices online can be found on the ticket prices page https://www.atlantis.com/dubai/atlantis-aquaventure/aquaventure-waterpark/pricing"
+  utter_aqua_2:
+    - text: "For latest operating hours for Aquaventure Waterpark - visit our FAQ page (Closing time subject to change depending on the season)."
+  utter_aqua_3:
+    - text: "For VIP experience please visit the VIP Premier Experiences counter at the Aquaventure Ticketing Plaza. You can book one of our Cabanas and we also offer a Fast Track Pass which will allow guests immediate access to the water slides and rides."
+  utter_aqua_4:
+    - text: "Small lockers starting from AED 55 and large lockers starting from AED 85"
+  utter_aqua_5:
+    - text: "Towels starting from AED 35 per towel. A locker and towel combo starting from AED 85.."
+  utter_aqua_6:
+    - text: "If you are arriving by car, please park your vehicle at Aquaventure Waterpark parking (turn right at first roundabout after exiting the tunnel leading to Atlantis Dubai). A shuttle will take you to the Aquaventure Ticketing Plaza."
+  utter_aqua_7:
+    - text: "Food and drinks from outside are not allowed but baby food and water are permitted."
+  utter_aqua_8:
+    - text: "You must be a minimum of 12 years old to access the waterpark alone."
+  utter_aqua_9:
+    - text: "We recommend to coming at 10:00am to be able to enjoy all the facilities."
+  utter_aqua_10:
+    - text: "Yes, if you buy the Aquaventure Super Pass."
+  utter_aqua_11:
+    - text: "Board shorts, Speedos, one and two piece swimsuit, burkinis, and rashguards are the only acceptable types of swim attire for Aquaventure Waterpark.For safety, the following are NOT PERMITTED to be worn:Abayas, sarees, long shirts, long trousers and jeans, underwear, cotton shorts, button ups or anything you would normally wear outside of water, any sheer or see through items.Please observe and respect local cultural sensitivity.All young children MUST wear swim diapers when in and around the water.Aquaventure management has the right to remove guests from the attraction/property for any swim attire that is deemed to be inappropriate. No refunds or discounts will be given to guests whom are unable to ride the slides due to inappropriate swim attire."
+  utter_aqua_12:
+    - text: "If I bring my nanny, do I need to pay for them too Yes, all guests who enter the facility are required to pay the full price."
+  utter_aqua_13:
+    - text: "Yes, baby strollers and prams are allowed."
+  utter_aqua_14:
+    - text: "Yes, Aquaventure waterpark welcomes all guests including those with disabilities."
+  utter_aqua_15:
+    - text: "Pregnant women are allowed into the waterpark, however many of the slides are not recommended for pregnant women.  "
+  utter_aqua_16:
+    - text: "Selfie sticks or other extension devices are not permitted on any rides."
+  utter_kids_1:
+    - text: "A high energy, supervised activity program for children aged 4 – 12 based on themes of Play, Create, Explore & Marine Education."
+  utter_kids_2:
+    - text: "Atlantis Kids Club is open 10:00am – 5:30pm daily and offers two different adventures for children."
+  utter_kids_3:
+    - text: "Morning Adventure – AED 160 per child Afternoon Adventure – AED 160 per child "
+  utter_kids_4:
+    - text: "Currently, theme nights are not offered due to COVID-19 restrictions and will resume once restrictions are lifted. "
+  utter_kids_5:
+    - text: "Kids Club is designed for children ages 4  – 12 (proof of age is required on initial visit)."
+  utter_kids_6:
+    - text: "Children less than 4 years old would need to be with one of our trained babysitters for one-to-one care (Babysitting fees and Kids Club admission fees apply – and subject to availability of babysitter)."
+  utter_kids_7:
+    - text: "Children in diapers are more than welcome to attend Kids Club; however they will need to be assisted by one of our trained babysitters (babysitting fees and Kids Club admission fees apply – and subject to availability of babysitter)."
+  utter_kids_8:
+    - text: "Meals are unfortunately not provided, so children will need to have eaten breakfast, lunch or dinner prior. Healthy vegetable sticks are offered mid-session, and regular water breaks take place. ."
+  utter_kids_9:
+    - text: "Healthy snacks are provided to children once in every session. Water is available anytime."
+  utter_kids_10:
+    - text: "Kids Club is an adult-free zone, due to our strict child safety and security policy parents and nannies will not be permitted in the facility. If you require one to one supervision during the Kids Club activities, you can book one of our trained babysitters to accompany your child. Please contact Kids Club directly if there are special considerations for your child. Kids Club does welcome parents for a tour of the facility daily from 5.30pm – 6pm. "
+  utter_kids_11:
+    - text: "Parents can visit the Kids Club for a guided tour daily between 5.30pm – 6pm. "
+  utter_kids_12:
+    - text: "We provide babysitting services for hotel guests within the resort property. All bookings are required with a minimum 24 hours’ advance notice. You can contact Atlantis babysitting at  kidsclub@atlantisthepalm.com for more information about pricing and ratio."
+  utter_kids_13:
+    - text: "Currently, we are unable to host Kids Club birthday parties due to COVID-19 restrictions and will resume once restrictions are lifted. "
+  utter_kids_14:
+    - text: "Atlantis Kids Club is an adult free zone; however parents are welcome to join for the last 30 minutes of the birthday party for the cake cutting ceremony."
+  utter_kids_15:
+    - text: "The Zone is a hangout zone for teenagers aged 13 – 17."
+  utter_kids_16:
+    - text: "The Zone offers access to iMac computers, video games, movie lounge and a dance floor. We also arrange group games and activities during sessions."
+  utter_kids_17:
+    - text: " The Zone is open daily from 10:00am – 5:30pm and in peak holiday season is extended to 10:00am – 10:00pm. Please see website for updated opening hours. We’re open to teenagers aged 13 – 17."
+  utter_kids_18:
+    - text: "The Zone is an adult-free zone."
+  utter_kids_19:
+    - text: "The Zone is free of charge."
+  utter_kids_20:
+    - text: "Meals are unfortunately not provided, so teens will need to have eaten breakfast, lunch or dinner prior. Water is available anytime."
+  utter_kids_21:
+    - text: "Soft Drinks are available for purchase, and water is available anytime. Snacks are currently not available for purchase."
+  utter_kids_22:
+    - text: "Children can either do a room post (as per parent authorization on the registration form) or pay in cash. Receipts are available."
+  utter_kids_23:
+    - text: "Currently, we are unable to host birthday parties at The Zone due to COVID-19 restrictions and will resume once restrictions are lifted."
+  utter_spa_1:
+    - text: "ShuiQi Spa is open from 9:00am  – 9:00 pm and the Fitness Center is open from 6:00am  – 9:00pm."
+  utter_spa_2:
+    - text: "The Fitness Centre is available to all guests. Only people paying for spa treatments can access the spa facilities."
+  utter_pool_1:
+    - text: "We offer non-motorized water sports including kayaking and stand up paddle-boarding. We also offer boat tours. For bookings, email concierge@atlantisthepalm.com or visit our Concierge Desk in the Grand Lobby."
+  utter_pool_2:
+    - text: "Our pools are open 8am – sunset."
+  utter_pool_3:
+    - text: "Lifeguards are present for our guest’s safety. Guests are requested to follow the safety instructions of the lifeguards at all times; otherwise they may risk injury to themselves or others."
+  utter_retail_1:
+    - text: "No, but you can find waterproof mobile phone covers at our retail stores."
+  utter_retail_2:
+    - text: "Yes, Marina Pharmacy in the West Tower of the resort. We also have a guest clinic, open from 9:00am – 10:00pm. Paramedic Assistance is available 24/7."
+  utter_retail_3:
+    - text: "Yes, we have a number of souvenir shops in the Avenues and kiosks in Aquaventure."
+  utter_retail_4:
+    - text: "Yes, you can buy swimwear at a range of retails stores at The Avenues."
+  utter_retail_5:
+    - text: "Tickets are AED 20 one way, AED 30 return."
+  utter_retail_6:
+    - text: "The monorail runs from 9am until 10pm, daily."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
