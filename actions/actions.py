@@ -109,7 +109,7 @@ def highlight(fulltext, snippet):
         start = fulltext.index(snippet)
         end = start + len(snippet)
 
-        lines = textwrap.wrap(fulltext)
+        lines = textwrap.wrap(fulltext, drop_whitespace=False)
         start_line = 0
         end_line = len(lines)
         pos = 0
@@ -124,17 +124,17 @@ def highlight(fulltext, snippet):
 
             if color_start and color_end:
                 start_line = end_line = x
-                ips = start - pos - x   # insertion point
-                ipe = end - pos - x     # insertion point
+                ips = start - pos   # insertion point
+                ipe = end - pos     # insertion point
                 lines[x] = line[:ips] + "**" + line[ips:ipe] + \
                     "**" + line[ipe:]
             elif color_start:
                 start_line = x
-                ip = start - pos - x    # insertion point
+                ip = start - pos    # insertion point
                 lines[x] = line[:ip] + "**" + line[ip:]
             elif color_end:
                 end_line = x
-                ip = end - pos - x    # insertion point
+                ip = end - pos    # insertion point
                 lines[x] = line[:ip] + "**" + line[ip:]
 
             pos = next_pos
@@ -145,7 +145,6 @@ def highlight(fulltext, snippet):
         end_line += 2
         return prettify('\n'.join(lines[start_line:end_line]))
     return prettify(snippet)
-
 
 def head(fulltext):
     """Returns the first three lines of the review."""
