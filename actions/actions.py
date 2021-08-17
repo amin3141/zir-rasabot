@@ -120,7 +120,7 @@ def highlight(fulltext, snippet):
             next_pos = pos + len(line)
 
             color_start = pos <= start < next_pos
-            color_end = pos <= end < next_pos
+            color_end = pos <= end <= next_pos
 
             if color_start and color_end:
                 start_line = end_line = x
